@@ -1,0 +1,318 @@
+/* Banner and section nav. Loads after styles.css. */
+/* Palette */
+:root {
+  --dusk: #7f99a6;
+  --pine: #24382c;
+  --field: #6f8348;
+  --mist: #cfd8d5;
+  --hanbok: #63c3d0;
+  --bar-h: 54px;
+  --hero-focus: 50% 40%;
+  --measure: 68ch;
+  --edge: 24px;
+}
+
+/* Layout */
+body:not(:has(#stage-gate:not(.hidden))) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0;
+  place-items: stretch;
+}
+
+body:not(:has(#stage-gate:not(.hidden))) #app {
+  flex: 1 0 auto;   /* Pushes footer to bottom on short pages. */
+  max-width: none;
+  padding: 0;
+}
+
+/* Sticky bar would otherwise sit on top of heading. */
+[id] { scroll-margin-top: calc(var(--bar-h) + 12px); }
+
+/* Hero */
+.hero { position: relative; }
+
+/* Sky colour stands in until image decodes. */
+.hero-img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 46vh, 460px);
+  background: var(--dusk);
+  object-fit: cover;
+  object-position: var(--hero-focus);
+}
+
+.hero-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 32px 0 26px;
+  background: linear-gradient(to top,
+      rgba(19, 32, 36, .84) 0%,
+      rgba(19, 32, 36, .52) 46%,
+      rgba(19, 32, 36, 0) 100%);
+  color: #fff;
+}
+
+/* --edge lines title with first nav link. */
+.hero-inner { padding: 0 var(--edge); }
+
+.kicker {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: .22em;
+  color: var(--hanbok);
+}
+
+.hero-text h1 {
+  margin: 4px 0 6px;
+  max-width: 22ch;
+  font-family: var(--text);
+  font-size: clamp(26px, 5vw, 46px);
+  font-weight: 500;
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+.sub {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, .82);
+}
+
+/* Skip link */
+.skip {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  z-index: 5;
+  padding: 10px 14px;
+  background: var(--card);
+  color: var(--ink);
+  border: var(--hairline);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.skip:focus { top: 8px; left: var(--edge); }
+
+#main:focus { outline: none; }
+
+/* Nav */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--pine);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.topbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topbar li { flex: 1 1 0; }
+
+.topbar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 8px;
+  color: var(--mist);
+  text-decoration: none;
+  white-space: nowrap;
+  border-left: 1px solid rgba(255, 255, 255, .09);
+  transition: color .12s ease, background-color .12s ease;
+}
+
+.topbar li:first-child a { border-left: 0; }
+
+.topbar .en {
+  font-size: 11px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+}
+
+.topbar .ko {
+  font-size: 10px;
+  letter-spacing: .06em;
+  color: rgba(207, 216, 213, .55);
+}
+
+.topbar a:hover .ko,
+.topbar a[aria-current="page"] .ko { color: rgba(255, 255, 255, .75); }
+
+.topbar a:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .08);
+}
+
+/* The base ring is --link, which disappears against pine. */
+.topbar a:focus-visible {
+  outline-color: var(--hanbok);
+  outline-offset: -3px;
+}
+
+.topbar a[aria-current="page"] {
+  color: #fff;
+  box-shadow: inset 0 -2px 0 var(--hanbok);
+}
+
+/* Narrow screens */
+@media (max-width: 700px) {
+  .topbar ul {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;  /* Stops swipe becoming a back gesture. */
+    scrollbar-width: none;
+  }
+
+  /* Equal division would squeeze seven tabs to nothing. Size to content
+     and scroll instead. */
+  .topbar li { flex: 0 0 auto; }
+
+  .topbar ul::-webkit-scrollbar { display: none; }
+
+  /* A hidden scrollbar. */
+  .topbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(36, 56, 44, 0), var(--pine) 85%);
+  }
+}
+
+@media (max-width: 520px) {
+  :root { --edge: 16px; }
+
+  .hero-text { padding: 22px 0 18px; }
+  .hero-text h1 { max-width: none; }
+  .topbar .en { font-size: 10px; letter-spacing: .14em; }
+  .topbar a { padding: 11px 16px; }
+}
+
+/* Article */
+
+:where(#main) h2 {  margin: 0 0 10px;
+  font-family: var(--text);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Motion */
+
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+  .topbar { border-bottom-color: rgba(255, 255, 255, .18); }
+  .hero-img { background: #2a3a42; }
+}
+/* Footer */
+body:has(#stage-gate:not(.hidden)) .sitefoot { display: none; }
+
+.sitefoot {
+  flex: none;
+  width: 100%;
+  background: var(--pine);
+  color: var(--mist);
+  border-top: 1px solid rgba(255, 255, 255, .12);
+}
+
+.foot-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 40px;
+  padding: 30px var(--edge) 24px;
+}
+
+.foot-col h2 {
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(207, 216, 213, .45);
+}
+
+.foot-title {
+  margin: 0 0 6px;
+  font-family: var(--text);
+  font-size: 17px;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.foot-note {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: rgba(207, 216, 213, .62);
+}
+
+.cites {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: rgba(207, 216, 213, .62);
+}
+
+.cites + .foot-note { margin-top: 10px; }
+
+.sitefoot a {
+  color: var(--mist);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.sitefoot a:hover {
+  color: #fff;
+  border-bottom-color: var(--hanbok);
+}
+
+.sitefoot a:focus-visible {
+  outline-color: var(--hanbok);
+  outline-offset: 3px;
+}
+
+.foot-base {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  justify-content: space-between;
+  padding: 12px var(--edge);
+  border-top: 1px solid rgba(255, 255, 255, .10);
+  font-size: 11px;
+  color: rgba(207, 216, 213, .45);
+}
+
+.foot-base p { margin: 0; }
+
+@media (max-width: 700px) {
+  .foot-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 26px var(--edge) 20px;
+  }
+}
+
+#main > h2,
+#main > p { max-width: var(--measure); }

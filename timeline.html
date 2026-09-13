@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Twenty years of Korean network history as a playable timeline: infrastructure, mobile, platforms, policy and incidents from 2006 to the present.">
+  <title>Timeline</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Turn it on to continue.</p>
+  </noscript>
+
+  <main id="app" tabindex="-1">
+
+    <!-- Top banner image -->
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">연표</p>
+          <h1>Twenty Years in a <b>Film</b>!</h1>
+          <p class="sub">Every milestone as timeline from October 2006 to present.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page links as topbar (navbar) -->
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html" aria-current="page"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <!-- Playable timeline film -->
+      <section class="band" aria-labelledby="tl-h">
+        <h2 id="tl-h">Twenty years; event by event</h2>
+
+        <div class="band-main">
+          <div id="tl-error" role="alert" hidden></div>
+
+          <!-- Drawn by script below -->
+          <div class="tl-canvas" id="tl-canvas"></div>
+
+          <!-- Play controls -->
+          <div class="tl-bar">
+            <button type="button" class="tl-play" id="tl-play" aria-pressed="false">Play</button>
+            <span class="tl-year" id="tl-year">January 2006</span>
+            <span class="tl-count" id="tl-count">0 events</span>
+            <span class="tl-spacer"></span>
+            <button type="button" class="linkish" id="tl-prev">&larr; Prev</button>
+            <button type="button" class="linkish" id="tl-next">Next &rarr;</button>
+            <button type="button" class="linkish" id="tl-reset">Reset</button>
+          </div>
+
+          <div id="tl-detail" class="tl-detail" aria-live="polite"></div>
+
+          <!-- Same data as table -->
+          <details id="tl-details">
+            <summary>View every event as table</summary>
+            <table id="tl-table">
+              <caption>These events load from a JSON file which consists of structured data, please view that <a href="data/timeline.json">here</a>!</caption>
+              <thead>
+                <tr>
+                  <th scope="col">When</th>
+                  <th scope="col">Event</th>
+                  <th scope="col">Thread</th>
+                </tr>
+              </thead>
+              <tbody id="tl-tbody"></tbody>
+            </table>
+          </details>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">On Next!</h3>
+          <p>Press play to start the film event, it runs around 20 seconds showing
+            different historic news that I collected. Events ahead of playhead are hollow
+            and so, the current event gets circled and displayed. You may use arrow keys, drag the 
+            slider, click on an event, or open the table below and select an event.
+          </p>
+
+          <ul class="graph-key tl-key" id="tl-key"></ul>
+
+          <p class="side-note">My take: Please observe infrastructure thread; busy until 2019 mostly showing Development
+            while policy keeps firing showing development in regulations around law and regulation for internet.
+          </p>
+        </aside>
+                <p class="tl-sources" id="tl-sources"></p>
+      </section>
+
+      <!-- What the film shape shows -->
+      <section class="band" aria-labelledby="read-h">
+        <h2 id="read-h">What shape shouts ?!</h2>
+
+        <div class="band-main prose">
+          <p>From the play animation, and collecting the data of news, three things stick out to me strikingly.</p>
+
+          <p>First, as noted above, infrastructure thread loads earlier on and by the time fibre upgrades happen and 5G arrives, there 
+            is no significant fire in thread. My inference developed here is that by the time 5G arrived in 2019, physical network development
+            is essentially finished in Korea. Future work nay happen in specialized labs and development might grow, but the coverage of physical
+            auxilliary cables seems connected.
+          </p>
+
+          <p>Second, policy is 'reactive.' The Shutdown Law with peering dispute, following consequential behaviour, the law is widespread; regulations almost
+            follow the usage of network than shaping it mostly. Essentially, my inference here is that since most technology is developed, Korea has been pushing
+            ethics and focusing on refining safety of users, as compared with leading countries around. e.g. Singapore.
+          </p>
+
+          <p>Third, contrary to what you are seeing, the platform thread is even but it never stops! KakaoTalk, Netflix launching there landscape in K-dramas, webtoon
+            boom, and especially <em>Squid Game</em> layered into a widespread boom to Korean culture. It would be wrong to ignore dramas in Korean ethno-society, these have
+            shaped as a revolutionary to heal Korea's past poverty and dictatorship era. My inference is supported by a detailed documentary on origin's of K-drama with how they
+            lifted off most censorship. The <a href="https://www.youtube.com/watch?v=3-1Rc8jJ-ng">documentary</a> may have political content.
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">About data</h3>
+          <dl class="scope">
+            <dt>Source</dt>
+            <dd>The collection of information is stored in JSON which you may access from opening and expanding the table, it records selected events, their dates, threads, and notes.</dd>
+            <dt>Validation Criterion</dt>
+            <dd>Dates must be strictly of format <code>YYYY-MM</code>, where ids are unique primary keys. Tampering with the JSON data will not refer partial timeline but render failures on top.</dd>
+            <dt>Rendering</dt>
+            <dd>Using the latest P5.js technology, canvas was rendered as distinct entity from the same array which loads the table, so they cannout get out-of-sync.</dd>
+          </dl>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Bottom of page, footer -->
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Define templates to be used from template engine -->
+  <script type="text/html" id="tpl-tl-rows">
+    {{#rows}}
+    <tr data-id="{{id}}" data-cat="{{cat}}" tabindex="0" role="button" aria-selected="false">
+      <th scope="row">{{when}}</th>
+      <td><span class="tl-t">{{title}}</span><span class="tl-n">{{note}}</span></td>
+      <td>{{category}}</td>
+    </tr>
+    {{/rows}}
+  </script>
+
+  <script type="text/html" id="tpl-tl-key">
+    {{#cats}}
+    <li data-cat="{{id}}" tabindex="0" role="button" aria-pressed="false">
+      <i class="swatch-{{id}}"></i> {{label}}
+    </li>
+    {{/cats}}
+  </script>
+
+  <script type="text/html" id="tpl-tl-sources">
+    {{#refs}}<cite data-ref="{{.}}"></cite>{{/refs}}
+  </script>
+
+  <script type="text/html" id="tpl-tl-detail">
+    <p class="tl-when">{{when}} · {{category}}</p>
+    <h3 class="tl-title">{{title}}</h3>
+    <p class="tl-note">{{note}}{{#hasRef}}<cite data-ref="{{ref}}"></cite>{{/hasRef}}</p>
+  </script>
+
+  <!-- Load order matters since some vendors act first -->
+  <script src="vendor/p5.min.js"></script>
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/refs.js"></script>
+  <script src="assets/js/timeline.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

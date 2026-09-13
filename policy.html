@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Korea's internet laws, the rulings that ended them, and the breaches behind them — as a queryable database running in your browser.">
+  <title>Policy</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="stylesheet" href="assets/css/policy.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Turn it on to continue.</p>
+  </noscript>
+
+  <main id="app" tabindex="-1">
+
+    <!-- Top banner image -->
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">정책과 격차</p>
+          <h1>Rules; Rulings; Records</h1>
+          <p class="sub">Query the laws yourself. The database runs in your browser. ;)</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page links -->
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html" aria-current="page"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <!-- SQL query tool -->
+      <section class="band" aria-labelledby="db-h">
+        <h2 id="db-h">Ask the database</h2>
+
+        <div class="band-main">
+          <div class="pol-grid">
+            <!-- Code editor box -->
+            <div id="pol-editor"></div>
+
+            <div class="pol-bar">
+              <button type="button" class="pol-run" id="pol-run">Run</button>
+              <p class="pol-note" id="pol-note">Loading...</p>
+            </div>
+
+            <!-- Results appear here -->
+            <div id="pol-out" role="region" aria-live="polite"
+                 aria-label="Query results"></div>
+          </div>
+        </div>
+
+        <!-- Ready made presets go here -->
+        <aside class="band-side">
+          <h3 class="side-h">Try one</h3>
+          <div id="pol-presets"></div>
+
+          <h3 class="side-h">Schema</h3>
+          <dl class="pol-schema" id="pol-schema"></dl>
+
+          <p class="side-note">SQLite attaches to WebAssembly, and so database is built from JSON at build and fetched once, after which 
+            every query runs locally!
+          </p>
+        </aside>
+      </section>
+
+      <!-- Real name law story -->
+      <section class="band" aria-labelledby="name-h">
+        <h2 id="name-h">Five years of laws</h2>
+
+        <div class="band-main prose">
+          <p>2007 onwards, any site above certain traffic threshold was required to verify the 
+            legal identity of its maker with an aim to curb abuse. As an effect, a national register 
+            was formed for surveillance to maintain ethics.
+          </p>
+
+          <p>By 23 August 2012, the Constitutional Court struck that rule down, finding in the public 
+            interest that justifying this restriction was too minute, observing that users had simply move to 
+            foreign platforms where the rule cannot be reached. <cite data-ref="columbia-realname-2012"></cite>
+            A law designed to monitor public speech had been relocated. <cite data-ref="koreaherald-realname-2012"></cite>
+          </p>
+
+          <p>As a counteragument, it can be noted that the breach on policy database's influenced other tables. In July 2011, 
+            there were about 35 million Nate and Cyworld accounts getting exposed in a country consisting of 49 million people. This means 
+            mandatory identity verification means certain records exist, and stealing them breaches privacy.
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Query it</h3>
+          <p>Run "Rulings joined to the law they concerned" preset to see which laws
+            ended in court and which ended politically. Only one of two on this page
+            was struck down.</p>
+        </aside>
+      </section>
+
+      <!-- Game curfew story -->
+      <section class="band" aria-labelledby="curfew-h">
+        <h2 id="curfew-h">Decade of midnight</h2>
+
+        <div class="band-main prose">
+          <p>The Shutdown Law was placed into effect in 20 November 2011, blocking every teenager below 16 from 
+            online game servers between mignight and 6 am. <cite data-ref="register-curfew-2011"></cite> Hence Korea became 
+            the first country to try national gaming curfew, while surviving constitutional hurdles in 2014.
+          </p>
+
+          <p>However, this law did not survive on phones as mobile games were never covered as scope and by the time two ministries 
+            announced to repeal in August 2021, mobiles already accounted for majority of market which the law aimed to govern. <cite data-ref="koreaherald-curfew-2021"></cite> 
+            This curfew ended on 31 December 2021, getting replaced by a system where guardians set the limits under parental controls. <cite data-ref="koreaherald-curfewend-2021"></cite>
+          </p>
+
+          <p>Yet... a restriction outlived. Under-19s are till date barred from PC bangs and gaming venues between 22 pm and 9 am under Game Industry Act's enforcement decree. 
+            <cite data-ref="crafted-pcbang-2026"></cite> The law regulating room outlasted the law regulating games.
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">How long things lasted</h3>
+          <p>"How long each law lasted" preset computes duration from enacted and ended columns; rows with no end date are measured as running till date, which is why the premises 
+            restrictions keep growing.
+          </p>
+          <p class="side-note">The calculation happens in SQLite within your browser and not in
+            page's JavaScript.</p>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Bottom of page -->
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Load order matters -->
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/refs.js"></script>
+  <script src="vendor/sql-wasm.js"></script>
+  <script src="vendor/policy.bundle.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "runners": ["htmlcs", "axe"],
+    "includeWarnings": true,
+    "timeout": 30000,
+    "wait": 500,
+    "reporters": ["cli", ["json", { "fileName": "./reports/v0.1/pa11y.json" }]]
+  },
+  "urls": [
+    { "url": "http://127.0.0.1:5500/index.html",      "screenCapture": "./reports/v0.3/index.png" },
+    { "url": "http://127.0.0.1:5500/timeline.html",   "screenCapture": "./reports/v0.3/timeline.png" },
+    { "url": "http://127.0.0.1:5500/network.html",    "screenCapture": "./reports/v0.3/network.png" },
+    { "url": "http://127.0.0.1:5500/pcbang.html",     "screenCapture": "./reports/v0.3/pcbang.png" },
+    { "url": "http://127.0.0.1:5500/culture.html",    "screenCapture": "./reports/v0.3/culture.png" },
+    { "url": "http://127.0.0.1:5500/policy.html",     "screenCapture": "./reports/v0.3/policy.png" },
+    { "url": "http://127.0.0.1:5500/references.html", "screenCapture": "./reports/v0.3/references.png" }
+  ]
+}

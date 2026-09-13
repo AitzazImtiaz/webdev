@@ -1,0 +1,162 @@
+{
+  "laws": [
+    {
+      "id": "network-act",
+      "name": "Network Act (Information and Communications Network Act)",
+      "enacted": "1999-01",
+      "ended": null,
+      "status": "in force",
+      "summary": "The sector-specific statute governing online service providers. It carried Korea's data-protection rules for online users before PIPA existed, and hosted the real-name provisions.",
+      "ref": "ihc-privacy-2020"
+    },
+    {
+      "id": "premises",
+      "name": "Game Industry Act premises restriction",
+      "enacted": "2006-10",
+      "ended": null,
+      "status": "in force",
+      "summary": "Under-19s barred from gaming venues between 22:00 and 09:00. Survived the Shutdown Law's repeal and still applies.",
+      "ref": "crafted-pcbang-2026"
+    },
+    {
+      "id": "realname",
+      "name": "Real-name verification system",
+      "enacted": "2007-07",
+      "ended": "2012-08",
+      "status": "struck down",
+      "summary": "Sites above a traffic threshold had to verify the legal identity of anyone posting.",
+      "ref": "koreaherald-realname-2012"
+    },
+    {
+      "id": "pipa",
+      "name": "Personal Information Protection Act",
+      "enacted": "2011-09",
+      "ended": null,
+      "status": "in force",
+      "summary": "Enacted 30 September 2011 as a general data-protection law covering almost every organisation including government. Among the strictest regimes in the world, with criminal as well as regulatory penalties.",
+      "ref": "iapp-pipa-2016"
+    },
+    {
+      "id": "shutdown",
+      "name": "Shutdown Law (Cinderella Law)",
+      "enacted": "2011-11",
+      "ended": "2021-12",
+      "status": "repealed",
+      "summary": "Under-16s blocked from online game servers between midnight and 6am. Korea was the first country to attempt a national gaming curfew.",
+      "ref": "register-curfew-2011"
+    },
+    {
+      "id": "pipa-2020",
+      "name": "Data 3 Act amendments",
+      "enacted": "2020-08",
+      "ended": null,
+      "status": "in force",
+      "summary": "Amendments to PIPA, the Network Act and the Credit Information Act came into force on 5 August 2020, introducing pseudonymised data and consolidating oversight under an independent commission.",
+      "ref": "ihc-privacy-2020"
+    },
+    {
+      "id": "pipc",
+      "name": "Personal Information Protection Commission made independent",
+      "enacted": "2020-08",
+      "ended": null,
+      "status": "in force",
+      "summary": "Advisory since 2011, the commission became an independent regulator in 2020 with powers to investigate breaches and levy fines up to 3% of annual revenue.",
+      "ref": "cookiescript-pipa-2025"
+    },
+    {
+      "id": "inapp",
+      "name": "In-app payment law (Telecommunications Business Act amendment)",
+      "enacted": "2021-08",
+      "ended": null,
+      "status": "in force",
+      "summary": "Barred app market operators from forcing developers onto their own billing systems. Passed 180 votes to 8 and nicknamed the Anti-Google law; the first such curb anywhere in the world.",
+      "ref": "loc-inapp-2021"
+    },
+    {
+      "id": "choice",
+      "name": "Parental choice system",
+      "enacted": "2022-01",
+      "ended": null,
+      "status": "in force",
+      "summary": "Replaced the blanket curfew with per-family time limits set by guardians.",
+      "ref": "koreaherald-curfew-2021"
+    },
+    {
+      "id": "inapp-decree",
+      "name": "In-app payment enforcement decree",
+      "enacted": "2022-03",
+      "ended": null,
+      "status": "in force",
+      "summary": "KCC guidelines set the threshold at operators with at least 100 billion won in prior-year sales and a million daily users, which captures both Google and Apple.",
+      "ref": "koreatimes-inapp-2022"
+    },
+    {
+      "id": "pipa-2023",
+      "name": "PIPA amendments of 2023",
+      "enacted": "2023-09",
+      "ended": null,
+      "status": "in force",
+      "summary": "Effective 15 September 2023. Added data portability and the right to be excluded from automated decision-making, tightened overseas transfer rules, and replaced some criminal sanctions with fines.",
+      "ref": "cookiescript-pipa-2025"
+    },
+    {
+      "id": "pipa-2026",
+      "name": "PIPA amendments of 2026",
+      "enacted": "2026-03",
+      "ended": null,
+      "status": "pending",
+      "summary": "Amended 10 March 2026, with most provisions taking effect on 11 September 2026.",
+      "ref": "dlapiper-kr-2026"
+    }
+  ],
+  "rulings": [
+    {
+      "id": "2010hunma47",
+      "date": "2012-08-23",
+      "court": "Constitutional Court of Korea",
+      "case_no": "2010Hun-Ma47",
+      "law_id": "realname",
+      "outcome": "unconstitutional",
+      "summary": "Unanimous. The Court found the public benefit too small to justify the restriction on expression, and noted users had simply migrated to foreign sites.",
+      "ref": "columbia-realname-2012"
+    },
+    {
+      "id": "shutdown-upheld",
+      "date": "2014-04-24",
+      "court": "Constitutional Court of Korea",
+      "case_no": "2011Hun-Ma659",
+      "law_id": "shutdown",
+      "outcome": "upheld",
+      "summary": "The curfew survived constitutional challenge and ran for another seven years before being repealed politically rather than judicially.",
+      "ref": null
+    },
+    {
+      "id": "skb-netflix",
+      "date": "2021-06-25",
+      "court": "Seoul Central District Court",
+      "case_no": "2020Ga-Hap533643",
+      "law_id": null,
+      "outcome": "for SK Broadband",
+      "summary": "Found it reasonable that Netflix provide something in return for network service. Appealed, then withdrawn on settlement in September 2023.",
+      "ref": "kedglobal-netflix-2023"
+    }
+  ],
+  "breaches": [
+    {
+      "id": "nate2011",
+      "date": "2011-07",
+      "service": "Nate and Cyworld",
+      "accounts": 35000000,
+      "summary": "Roughly 35 million accounts exposed, in a country of about 49 million people.",
+      "ref": null
+    },
+    {
+      "id": "kt2021",
+      "date": "2021-10",
+      "service": "KT (outage, not breach)",
+      "accounts": 16500000,
+      "summary": "A routing error cut service to 16.5 million customers for about forty minutes.",
+      "ref": "reuters-kt-2021"
+    }
+  ]
+}

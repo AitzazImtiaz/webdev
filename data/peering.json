@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "title": "Netflix traffic to SK Broadband, and the fight over who pays",
+    "note": "Only two traffic measurements were reported publicly. The line between them is interpolation, not data."
+  },
+  "traffic": [
+    { "date": "2018-05", "gbps": 50 },
+    { "date": "2021-09", "gbps": 1200 }
+  ],
+  "steps": [
+    {
+      "id": "arrive",
+      "date": "2016-01",
+      "title": "Netflix arrives",
+      "body": "Foreign streaming lands on a network that was already finished. Korea had spent a decade building capacity; Netflix was the first company to really use it.",
+      "ref": null
+    },
+    {
+      "id": "fifty",
+      "date": "2018-05",
+      "title": "50 Gbps",
+      "body": "SK Broadband later put Netflix traffic on its network at 50 gigabits per second in May 2018. At the time, unremarkable.",
+      "ref": "koreaherald-netflix-2023"
+    },
+    {
+      "id": "sue",
+      "date": "2020-04",
+      "title": "Netflix sues first",
+      "body": "Netflix asks a Seoul court to confirm it has no obligation to pay network usage fees, rejecting SK Broadband's demand. The argument is net neutrality: subscribers already pay for their broadband.",
+      "ref": "kedglobal-netflix-2023"
+    },
+    {
+      "id": "ruling",
+      "date": "2021-06",
+      "title": "The court disagrees",
+      "body": "Seoul Central District Court rules for SK Broadband, finding it reasonable that Netflix provide something in return for the service. Netflix appeals a month later, warning the ruling could topple the global internet ecosystem.",
+      "ref": "kedglobal-netflix-2023"
+    },
+    {
+      "id": "twelve",
+      "date": "2021-09",
+      "title": "1,200 Gbps",
+      "body": "Twenty-four times the 2018 figure, driven by a run of hits. Squid Game had launched that same month. SK Broadband files a counterclaim seeking roughly 23 million dollars a year.",
+      "ref": "techcrunch-skb-2021"
+    },
+    {
+      "id": "share",
+      "date": "2022-01",
+      "title": "Seven percent of everything",
+      "body": "By the first round of litigation Netflix accounted for at least 7% of all South Korean internet traffic, on figures from the Korea Information Society Development Institute. The disputed sum for a single year was 27.2 billion won.",
+      "ref": "bloomberg-netflix-2023"
+    },
+    {
+      "id": "settle",
+      "date": "2023-09",
+      "title": "Both sides walk away",
+      "body": "After five years, Netflix and SK Broadband drop every claim and announce a partnership bundling Netflix with SK Telecom plans instead. No public agreement on the question itself. SK Broadband's position on network usage fees, it said, remains unchanged.",
+      "ref": "koreaherald-netflix-2023"
+    }
+  ]
+}

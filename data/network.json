@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "The Korean network, 2006-2026",
+    "yearFrom": 2006,
+    "yearTo": 2026,
+    "viewBox": { "w": 800, "h": 520 }
+  },
+  "nodes": [
+    { "id": "kt", "label": "KT", "type": "isp", "x": 140, "y": 90, "note": "Former state monopoly, largest fixed-line operator.", "source": "TODO" },
+    { "id": "skb", "label": "SK Broadband", "type": "isp", "x": 400, "y": 90, "note": "Formed from Hanaro Telecom, acquired by SK in 2008.", "source": "TODO" },
+    { "id": "lgu", "label": "LG U+", "type": "isp", "x": 660, "y": 90, "note": "Third national operator, formed 2010 merger.", "source": "TODO" },
+    { "id": "kinx", "label": "KINX", "type": "ix", "x": 270, "y": 245, "note": "Independent commercial internet exchange.", "source": "TODO" },
+    { "id": "ktix", "label": "KT-IX", "type": "ix", "x": 530, "y": 245, "note": "Carrier-operated exchange point.", "source": "TODO" },
+    { "id": "kreonet", "label": "KREONET", "type": "academic", "x": 130, "y": 400, "note": "National research network, run by KISTI.", "source": "TODO" },
+    { "id": "koren", "label": "KOREN", "type": "academic", "x": 320, "y": 400, "note": "Advanced research testbed network.", "source": "TODO" },
+    { "id": "apg", "label": "APG", "type": "cable", "x": 545, "y": 405, "note": "Asia Pacific Gateway submarine cable.", "source": "TODO" },
+    { "id": "ncp", "label": "NCP", "type": "cable", "x": 700, "y": 340, "note": "New Cross Pacific cable system.", "source": "TODO" },
+    { "id": "sjc", "label": "SJC", "type": "cable", "x": 700, "y": 460, "note": "Southeast Asia Japan Cable.", "source": "TODO" }
+  ],
+  "edges": [
+    { "from": "kt", "to": "kinx", "year": 2006, "kind": "peering" },
+    { "from": "kt", "to": "ktix", "year": 2006, "kind": "backbone" },
+    { "from": "skb", "to": "kinx", "year": 2008, "kind": "peering" },
+    { "from": "skb", "to": "ktix", "year": 2009, "kind": "peering" },
+    { "from": "lgu", "to": "kinx", "year": 2010, "kind": "peering" },
+    { "from": "lgu", "to": "ktix", "year": 2012, "kind": "peering" },
+    { "from": "kreonet", "to": "kinx", "year": 2007, "kind": "backbone" },
+    { "from": "koren", "to": "kinx", "year": 2009, "kind": "backbone" },
+    { "from": "kt", "to": "apg", "year": 2016, "kind": "submarine" },
+    { "from": "skb", "to": "ncp", "year": 2018, "kind": "submarine" },
+    { "from": "kt", "to": "sjc", "year": 2013, "kind": "submarine" }
+  ]
+}

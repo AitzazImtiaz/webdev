@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "PC bangs in Korea",
+    "unit": "venues",
+    "note": "Counts come from different registers and are not strictly comparable across the whole series."
+  },
+  "counts": [
+    { "year": 1997, "value": 100, "source": "book", "label": "≈100" },
+    { "year": 2000, "value": 15000, "source": "book", "label": "15,000" },
+    { "year": 2001, "value": 23548, "source": "kocca", "label": "23,548" },
+    { "year": 2017, "value": 10568, "source": "nts", "label": "10,568" },
+    { "year": 2024, "value": 7243, "source": "kocca", "label": "7,243" },
+    { "year": 2025, "value": 6983, "source": "kocca", "label": "6,983" }
+  ]
+}

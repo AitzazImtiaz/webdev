@@ -1,0 +1,435 @@
+
+ ####                ####             #####        
+ ####                ####           #######        
+ ####      ###       ####         #########        
+ ####     ######     ####       ###### ####        
+  ######################       #####   ####        
+    #######    #######       #####     ####        
+    #######    #######         #       ####        
+  ######################               ####        
+ ####     ######     ####              ####        
+ ####       ##       ####              ####        
+ ####                ####       ################## 
+ ####                ####       ################## 
+
+==================================================
+# SiteOne Crawler, v2.5.1.20260627               #
+# Author: jan.reges@siteone.cz                   #
+==================================================
+
+
+Detected terminal width 120 < 140 chars - compact mode activated.
+
+Progress| URL                                  | Status | Type     | Time   | Size   | Cache  | Access.  | Best pr.
+--------------------------------------------------------------------------------------------------------------------
+1/21    | /                                    | 200    | HTML     | 1 ms   | 13 kB  | none   | 1/4      | 1/6     
+2/21    | /policy.html                         | 200    | HTML     | 2 ms   | 3 kB   | none   | 4        | 4       
+3/21    | /assets/img/fav/favicon-32.png       | 200    | Image    | 4 ms   | 1 kB   | none   |          |         
+4/21    | /assets/img/fav/favicon.ico          | 200    | Image    | 4 ms   | 7 kB   | none   |          |         
+5/21    | /vendor/mustache.min.js              | 200    | JS       | 6 ms   | 12 kB  | none   |          |         
+6/21    | /assets/js/render.js                 | 200    | JS       | 6 ms   | 4 kB   | none   |          |         
+7/21    | /assets/js/refs.js                   | 200    | JS       | 4 ms   | 3 kB   | none   |          |         
+8/21    | /assets/js/gate.js                   | 200    | JS       | 1 ms   | 7 kB   | none   |          |         
+9/21    | /assets/js/nav.js                    | 200    | JS       | 5 ms   | 200 B  | none   |          |         
+10/21   | /assets/img/header.jpg               | 200    | Image    | 6 ms   | 1023 kB | none   |          |         
+11/21   | /assets/css/banner.css               | 200    | CSS      | 2 ms   | 7 kB   | none   |          |         
+12/25   | /timeline.html                       | 200    | HTML     | 2 ms   | 9 kB   | none   | 4        | 4       
+13/25   | /assets/css/graph.css                | 200    | CSS      | 2 ms   | 7 kB   | none   |          |         
+14/27   | /pcbang.html                         | 200    | HTML     | 2 ms   | 13 kB  | none   | 5        | 7       
+15/27   | /assets/js/validate.js               | 200    | JS       | 4 ms   | 3 kB   | none   |          |         
+16/27   | /culture.html                        | 200    | HTML     | 4 ms   | 3 kB   | none   | 4        | 4       
+17/28   | /assets/css/styles.css               | 200    | CSS      | 4 ms   | 6 kB   | none   |          |         
+18/28   | /references.html                     | 200    | HTML     | 4 ms   | 3 kB   | none   | 4        | 4       
+19/31   | /network.html                        | 200    | HTML     | 2 ms   | 13 kB  | none   | 4        | 4       
+20/31   | /index.html                          | 200    | HTML     | 2 ms   | 13 kB  | none   | 1/4      | 1/6     
+21/31   | /assets/img/fav/apple-touch-icon.png | 200    | Image    | 2 ms   | 9 kB   | none   |          |         
+22/31   | /assets/js/timeline.js               | 200    | JS       | 2 ms   | 15 kB  | none   |          |         
+23/31   | /data/timeline.json                  | 200    | JSON     | 2 ms   | 6 kB   | none   |          |         
+24/31   | /vendor/p5.min.js                    | 200    | JS       | 3 ms   | 966 kB | none   |          |         
+25/31   | /assets/css/timeline.css             | 200    | CSS      | 4 ms   | 3 kB   | none   |          |         
+26/31   | /vendor/lz-string.min.js             | 200    | JS       | 6 ms   | 5 kB   | none   |          |         
+27/31   | /assets/js/pcbang.js                 | 200    | JS       | 4 ms   | 7 kB   | none   |          |         
+28/31   | /assets/img/background.png           | 200    | Image    | 5 ms   | 513 kB | none   |          |         
+29/31   | /assets/js/network.js                | 200    | JS       | 6 ms   | 5 kB   | none   |          |         
+30/31   | /vendor/cytoscape.min.js             | 200    | JS       | 6 ms   | 425 kB | none   |          |         
+31/31   | /data/network.json                   | 200    | JSON     | 2 ms   | 2 kB   | none   |          |         
+
+Skipped URLs Summary
+--------------------
+
+Reason             | Domain          | Unique URLs
+----------------------------------------------------
+Not allowed host   | www.youtube.com | 1          
+
+
+Skipped URLs
+------------
+
+Reason             | Skipped URL                                                  | Source              | Found at URL                                                
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Not allowed host   | https://www.youtube.com/watch?v=3-1Rc8jJ-ng                  | <a href>            | /timeline.html                                              
+
+
+External URLs
+-------------
+
+External URL                                                 | Pages | Found on URL (max 5)                                        
+-------------------------------------------------------------------------------------------------------------------------------------
+https://www.youtube.com/watch?v=3-1Rc8jJ-ng                  | 1     | :8877/timeline.html                                         
+
+
+Redirected URLs
+---------------
+
+No redirects found.
+
+
+404 URLs
+--------
+
+No 404 URLs found.
+
+
+TOP fastest URLs
+----------------
+
+Time   | Status | Fast URL                                                                                            
+------------------------------------------------------------------------------------------------------------------------
+1 ms   | 200    | :8877/                                                                                              
+2 ms   | 200    | :8877/policy.html                                                                                   
+2 ms   | 200    | :8877/network.html                                                                                  
+2 ms   | 200    | :8877/index.html                                                                                    
+2 ms   | 200    | :8877/pcbang.html                                                                                   
+2 ms   | 200    | :8877/timeline.html                                                                                 
+4 ms   | 200    | :8877/culture.html                                                                                  
+4 ms   | 200    | :8877/references.html                                                                               
+
+
+TOP slowest URLs
+----------------
+
+No slow URLs slower than 0.01 second(s) found.
+
+
+SEO metadata
+------------
+
+This table contains large data and shows max 10 rows. To see them all, use output to HTML using `--output-html-report=tmp/myreport.html`.
+
+URL                                                | Indexing             | Title      | H1         | Description | Keywords  
+-------------------------------------------------------------------------------------------------------------------------------
+/                                                  | Allowed              | Overview   | A Histo…ea | How Sou…y. |           
+/culture.html                                      | Allowed              | Culture…ea | Life on…eb |            |           
+/index.html                                        | Allowed              | Overview   | A Histo…ea | How Sou…y. |           
+/network.html                                      | Allowed              | Network    | Wires,…es  | Who own…t. |           
+/pcbang.html                                       | Allowed              | PC Bang    | The Roo…ak | The Kor…y. |           
+/policy.html                                       | Allowed              | Policy…ea  | Rules,…ap  |            |           
+/references.html                                   | Allowed              | Referen…ea | Sources…ts |            |           
+/timeline.html                                     | Allowed              | Timelin…ea | Twenty…m!  | Twenty…t.  |           
+
+
+OpenGraph metadata
+------------------
+
+No URLs with OpenGraph data (og:* or twitter:* meta tags).
+
+
+Heading structure
+-----------------
+
+This table contains large data and shows max 10 rows. To see them all, use output to HTML using `--output-html-report=tmp/myreport.html`.
+
+Heading structure                                                  | Count | Errors | URL                           
+----------------------------------------------------------------------------------------------------------------------
+<h2> Solve this challenge! [#gate-h] <h1> A…Sources on this page   | 9     | 1      | /                             
+<h2> Solve this challenge! [#gate-h] <h1> A…Sources on this page   | 9     | 1      | /index.html                   
+<h1> Rules, Breaches and the Gap <h2> Rules,…Sources on this page  | 3     | 0      | /policy.html                  
+<h1> Twenty Years in a Film! <h2> Twenty yea…Sources on this page  | 6     | 0      | /timeline.html                
+<h1> The Room After the Peak <h2> Take a sea…Sources on this page  | 8     | 0      | /pcbang.html                  
+<h1> Life on the Korean Web <h2> Life on the…Sources on this page  | 3     | 0      | /culture.html                 
+<h1> Sources and Credits <h2> Sources <h2> About the sources       | 3     | 0      | /references.html              
+<h1> Wires, Exchanges, Cables <h2> The Netwo…Sources on this page  | 10    | 0      | /network.html                 
+
+
+HTTP headers
+------------
+
+Header                  | Occurs | Unique | Values preview                 | Min value  | Max value 
+------------------------------------------------------------------------------------------------------
+Connection              | 31     | 1      | close                          |            |           
+Content-Length          | 31     | -      | [ignored generic values]       | 200 B      | 1023 kB   
+Content-Security-Policy | 31     | 1      | default-src 'self' '…ne' data: |            |           
+Content-Type            | 31     | 7      | [see values below]             |            |           
+X-Content-Type-Options  | 31     | 1      | nosniff                        |            |           
+X-Frame-Options         | 31     | 1      | DENY                           |            |           
+X-Powered-By            | 31     | 1      | siteone-crawler/2.5.1.20260627 |            |           
+
+
+HTTP header values
+------------------
+
+Header                  | Occurs | Value                                                           
+-----------------------------------------------------------------------------------------------------
+Connection              | 31     | close                                                           
+Content-Security-Policy | 31     | default-src 'self' 'unsafe-inline' data:                        
+Content-Type            | 12     | application/javascript; charset=utf-8                           
+Content-Type            | 8      | text/html; charset=utf-8                                        
+Content-Type            | 4      | text/css; charset=utf-8                                         
+Content-Type            | 3      | image/png                                                       
+Content-Type            | 2      | application/json; charset=utf-8                                 
+Content-Type            | 1      | image/jpeg                                                      
+Content-Type            | 1      | image/x-icon                                                    
+X-Content-Type-Options  | 31     | nosniff                                                         
+X-Frame-Options         | 31     | DENY                                                            
+X-Powered-By            | 31     | siteone-crawler/2.5.1.20260627                                  
+
+
+HTTP Caching by content type (only from crawlable domains)
+----------------------------------------------------------
+
+Content type | Cache type   | URLs  | AVG lifetime | MIN lifetime | MAX lifetime
+----------------------------------------------------------------------------
+JS           | No cache headers | 12    | -          | -          | -         
+HTML         | No cache headers | 8     | -          | -          | -         
+Image        | No cache headers | 5     | -          | -          | -         
+CSS          | No cache headers | 4     | -          | -          | -         
+JSON         | No cache headers | 2     | -          | -          | -         
+
+
+HTTP Caching by domain
+----------------------
+
+Domain               | Cache type   | URLs  | AVG lifetime | MIN lifetime | MAX lifetime
+------------------------------------------------------------------------------------
+127.0.0.1            | No cache headers | 31    | -          | -          | -         
+
+
+HTTP Caching by domain and content type
+---------------------------------------
+
+Domain               | Content type | Cache type   | URLs  | AVG lifetime | MIN lifetime | MAX lifetime
+---------------------------------------------------------------------------------------------------
+127.0.0.1            | JS           | No cache headers | 12    | -          | -          | -         
+127.0.0.1            | HTML         | No cache headers | 8     | -          | -          | -         
+127.0.0.1            | Image        | No cache headers | 5     | -          | -          | -         
+127.0.0.1            | CSS          | No cache headers | 4     | -          | -          | -         
+127.0.0.1            | JSON         | No cache headers | 2     | -          | -          | -         
+
+
+TOP non-unique titles
+---------------------
+
+Count | Title                                                                                                         
+------------------------------------------------------------------------------------------------------------------------
+2     | Overview                                                                                                      
+
+
+TOP non-unique descriptions
+---------------------------
+
+Count | Description                                                                                                   
+------------------------------------------------------------------------------------------------------------------------
+3     |                                                                                                               
+2     | How South Korea used the network it had already built, from 2006 to the pr…re, PC bangs, platforms and policy.
+
+
+Best practices
+--------------
+
+Analysis name                            | OK    | Notice | Warning | Critical
+--------------------------------------------------------------------------------
+Invalid inline SVGs                      | 3     | 0      | 0       | 0       
+Large inline SVGs (> 5120 B)             | 3     | 0      | 0       | 0       
+Duplicate inline SVGs (> 5 and > 1024 B) | 3     | 0      | 0       | 0       
+Heading structure                        | 13    | 0      | 1       | 0       
+DOM depth (> 30)                         | 8     | 0      | 0       | 0       
+Title uniqueness (> 10%)                 | 6     | 0      | 1       | 0       
+Description uniqueness (> 10%)           | 3     | 0      | 2       | 0       
+Brotli support                           | 0     | 0      | 8       | 0       
+WebP support                             | 0     | 0      | 1       | 0       
+AVIF support                             | 0     | 0      | 1       | 0       
+
+
+Accessibility
+-------------
+
+Analysis name                | OK    | Notice | Warning | Critical
+--------------------------------------------------------------------
+Missing image alt attributes | 1     | 0      | 0       | 0       
+HTML structural issues       | 8     | 0      | 0       | 0       
+Unnamed links/buttons        | 6     | 0      | 0       | 0       
+Missing main landmark        | 1     | 0      | 0       | 0       
+Missing form labels          | 5     | 0      | 1       | 0       
+Missing html lang attribute  | 1     | 0      | 0       | 0       
+
+
+Source domains
+--------------
+
+Domain    | Totals       | HTML        | Image      | JS          | CSS         | JSON     
+---------------------------------------------------------------------------------------------
+127.0.0.1 | 31/3MB/123ms | 8/71kB/22ms | 5/2MB/23ms | 12/1MB/58ms | 4/22kB/14ms | 2/8kB/5ms
+
+
+Content types
+-------------
+
+Content type | URLs  | Total size | Total time | Avg time | Status 20x
+------------------------------------------------------------------------
+JS           | 12    | 1 MB       | 58 ms      | 4 ms     | 12        
+HTML         | 8     | 71 kB      | 22 ms      | 2 ms     | 8         
+Image        | 5     | 2 MB       | 23 ms      | 4 ms     | 5         
+CSS          | 4     | 22 kB      | 14 ms      | 3 ms     | 4         
+JSON         | 2     | 8 kB       | 5 ms       | 2 ms     | 2         
+
+
+Content types (MIME types)
+--------------------------
+
+Content type               | URLs  | Total size | Total time | Avg time | Status 20x
+--------------------------------------------------------------------------------------
+application/javascript; charset=utf-8 | 12    | 1 MB       | 58 ms      | 4 ms     | 12        
+text/html; charset=utf-8   | 8     | 71 kB      | 22 ms      | 2 ms     | 8         
+text/css; charset=utf-8    | 4     | 22 kB      | 14 ms      | 3 ms     | 4         
+image/png                  | 3     | 524 kB     | 12 ms      | 4 ms     | 3         
+application/json; charset=utf-8 | 2     | 8 kB       | 5 ms       | 2 ms     | 2         
+image/jpeg                 | 1     | 1023 kB    | 6 ms       | 6 ms     | 1         
+image/x-icon               | 1     | 7 kB       | 4 ms       | 4 ms     | 1         
+
+
+DNS info
+--------
+
+DNS resolving tree                                                    
+------------------------------------------------------------------------
+Failed to create DNS resolver: protocol error:…alid IP address syntax 
+
+
+Security
+--------
+
+Header                     | OK    | Notice | Warning | Critical | Recommendation                                    
+-----------------------------------------------------------------------------------------------------------------------
+X-Powered-By               | 0     | 0      | 0       | 8        | X-Powered-By header is set to 'sit…their versions.
+Referrer-Policy            | 0     | 0      | 8       | 0        | Referrer-Policy header is not set.…y and security.
+Content-Security-Policy    | 0     | 0      | 8       | 0        | Content-Security-Policy is set but…XSS protection.
+Feature-Policy             | 0     | 0      | 8       | 0        | Feature-Policy header is not set.…-Policy is set. 
+Permissions-Policy         | 0     | 0      | 8       | 0        | Permissions-Policy header is not s…s for security.
+Cross-Origin-Opener-Policy | 0     | 8      | 0       | 0        | Cross-Origin-Opener-Policy is not…ctre/XS-Leaks). 
+Cross-Origin-Embed…-Policy | 0     | 8      | 0       | 0        | Cross-Origin-Embedder-Policy is no…erful features.
+Cross-Origin-Resou…-Policy | 0     | 8      | 0       | 0        | Cross-Origin-Resource-Policy is no…this resource. 
+X-Frame-Options            | 8     | 0      | 0       | 0        |                                                   
+X-XSS-Protection           | 8     | 0      | 0       | 0        |                                                   
+X-Content-Type-Options     | 8     | 0      | 0       | 0        |                                                   
+Server                     | 8     | 0      | 0       | 0        | Server header is not set or empty.…is recommended.
+
+
+Analysis stats
+--------------
+
+Class::method                                        | Exec time | Exec count
+-------------------------------------------------------------------------------
+BestPracticeAnalyzer::checkNonClickablePhoneNumbers  | 2 ms      | 8         
+BestPracticeAnalyzer::checkHeadingStructure          | 2 ms      | 8         
+BestPracticeAnalyzer::checkMaxDOMDepth               | 2 ms      | 8         
+SeoAndOpenGraphAnalyzer::analyzeHeadings             | 1 ms      | 1         
+BestPracticeAnalyzer::checkInlineSvg                 | 0 ms      | 8         
+BestPracticeAnalyzer::checkMissingQuotesOnAttributes | 0 ms      | 8         
+AccessibilityAnalyzer::checkImageAltAttributes       | 0 ms      | 8         
+AccessibilityAnalyzer::checkHtmlStructure            | 0 ms      | 8         
+AccessibilityAnalyzer::checkMissingAriaLabels        | 0 ms      | 8         
+AccessibilityAnalyzer::checkMissingLabels            | 0 ms      | 8         
+SecurityAnalyzer::checkHeaders                       | 0 ms      | 8         
+SeoAndOpenGraphAnalyzer::analyzeSeo                  | 0 ms      | 1         
+BestPracticeAnalyzer::checkMetaDescriptionUniqueness | 0 ms      | 1         
+AccessibilityAnalyzer::checkMissingLang              | 0 ms      | 8         
+AccessibilityAnalyzer::checkMissingRoles             | 0 ms      | 8         
+BestPracticeAnalyzer::checkTitleUniqueness           | 0 ms      | 1         
+SeoAndOpenGraphAnalyzer::analyzeOpenGraph            | 0 ms      | 1         
+SeoAndOpenGraphAnalyzer::emitSeoQualityFindings      | 0 ms      | 1         
+BestPracticeAnalyzer::checkAvifSupport               | 0 ms      | 1         
+BestPracticeAnalyzer::checkBrotliSupport             | 0 ms      | 1         
+BestPracticeAnalyzer::checkWebpSupport               | 0 ms      | 1         
+SecurityAnalyzer::checkHtmlSecurity                  | 0 ms      | 8         
+
+
+Content processor stats
+-----------------------
+
+Class::method                                            | Exec time | Exec count
+-----------------------------------------------------------------------------------
+HtmlProcessor::findUrls                                  | 13 ms     | 8         
+NextJsProcessor::applyContentChangesBeforeUrlParsing     | 8 ms      | 24        
+JavaScriptProcessor::findUrls                            | 7 ms      | 20        
+CssProcessor::findUrls                                   | 1 ms      | 12        
+AstroProcessor::findUrls                                 | 0 ms      | 20        
+NextJsProcessor::findUrls                                | 0 ms      | 24        
+AstroProcessor::applyContentChangesBeforeUrlParsing      | 0 ms      | 20        
+JavaScriptProcessor::applyContentChangesBeforeUrlParsing | 0 ms      | 20        
+CssProcessor::applyContentChangesBeforeUrlParsing        | 0 ms      | 12        
+SvelteProcessor::applyContentChangesBeforeUrlParsing     | 0 ms      | 8         
+HtmlProcessor::applyContentChangesBeforeUrlParsing       | 0 ms      | 8         
+SvelteProcessor::findUrls                                | 0 ms      | 8         
+
+
+========================================================================================================================
+Total execution time 4.8 s using 3 workers and 2048M memory limit
+Total of 31 visited URLs with a total size of 3 MB and power of 6 reqs/s with download speed 653 kB/s
+Response times: AVG 4 ms MIN 1 ms MAX 6 ms P90 5 ms TOTAL 124 ms
+========================================================================================================================
+
+╔═════════════════════════════════════════════════════════════════╗
+║                      WEBSITE QUALITY SCORE                      ║
+╠═════════════════════════════════════════════════════════════════╣
+║  Overall         ██████████████████████░░░   8.6/10  Good       ║
+╠═════════════════════════════════════════════════════════════════╣
+║  Performance     ██████████████████████░░░   8.9/10  Good       ║
+║  SEO             ███████████████████████░░   9.1/10  Excellent  ║
+║  Security        ███████████████████░░░░░░   7.5/10  Good       ║
+║  Accessibility   ██████████████████████░░░   8.8/10  Good       ║
+║  Best Practices  ███████████████████████░░   9.1/10  Excellent  ║
+╚═════════════════════════════════════════════════════════════════╝
+
+Summary
+-------
+
+⛔ Problem with DNS analysis: Failed to create DNS resolver: protocol error: failed to parse nameserver address: invalid IP address syntax.
+⛔ Security - 8 pages(s) with critical finding(s).
+⚠️ 21 static asset(s) are not cacheable (no-store or missing cache headers).
+⚠️ The title 'Overview' exceeds the allowed 10% duplicity. 25% of pages have this same title.
+⚠️ The description 'How South Korea used the network it had already built, from 2006 to the present: infrastructure, PC bangs, platforms and policy.' exceeds the allowed 10% duplicity. 25% of pages have this same description.
+⚠️ The description '' exceeds the allowed 10% duplicity. 37% of pages have this same description.
+⚠️ 8 page(s) do not support Brotli compression.
+⚠️ No WebP image found on the website.
+⚠️ No AVIF image found on the website.
+⚠️ 2 page(s) with skipped heading levels.
+⚠️ 2 page(s) without form labels.
+⏩ Loaded robots.txt for domain '127.0.0.1': status code 404, size 104 B and took 5 ms.
+⏩ Skipped URLs - 1 skipped URLs found.
+⏩ External URLs - 1 external URL(s) found.
+⏩ SSL/TLS not supported, analyzer skipped.
+⏩ 4 page(s) with a title outside the recommended 10-60 characters.
+⏩ 3 page(s) without a meta description.
+⏩ 8 page(s) without a rel=canonical link.
+✅ Redirects - no redirects found.
+✅ 404 OK - all pages exists, no non-existent pages found.
+✅ Performance OK - all non-media URLs are faster than 3 seconds.
+✅ All indexable pages have a <title>.
+✅ HTTP headers - found 7 unique headers.
+✅ Static assets use long-lived caching.
+✅ All pages have quoted attributes.
+✅ All pages have inline SVGs smaller than 5120 bytes.
+✅ All pages have inline SVGs with less than 5 duplicates.
+✅ All pages have valid or none inline SVGs.
+✅ All pages without multiple <h1> headings.
+✅ All pages have <h1> heading.
+✅ All pages have DOM depth less than 30.
+✅ All pages have clickable (interactive) phone numbers.
+✅ No HTML structural issues found.
+✅ All pages have image alt attributes.
+✅ All links/buttons have an accessible name.
+✅ All pages expose a main landmark.
+✅ All pages have lang attribute.
+✅ All pages are within the page-weight budget.
+📌 HTML report saved to '/Users/aitzaz/Downloads/webdev/reports/v0.3/audit.html' and took 0 ms.
+

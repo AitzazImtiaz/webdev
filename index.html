@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How South Korea used the network it had already built, from 2006 to the present: infrastructure, PC bangs, platforms and policy.">
+  <title>Overview</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Please turn it on to continue. HMPH.</p>
+  </noscript>
+
+  <!-- Bot check screen -->
+  <section class="card" id="stage-gate" aria-labelledby="gate-h">
+    <p class="eyebrow">Local verification :D</p>
+    <h2 class="title" id="gate-h">Solve this challenge!</h2>
+    <p class="lede">Sowwy... I have to confirm you are not a robot. Please look at the plate and type these 5 characters. Shhh, case-insensitive here.
+    Alternatively, you can do some quick maths. :)</p>
+
+    <!-- Distorted image -->
+    <div class="plate-wrap" id="plate-wrap">
+      <div class="plate-head">
+        <span id="plate-id">plate 000</span>
+        <button type="button" class="linkish" id="refresh">New plate</button>
+      </div>
+      <canvas id="plate" role="img"
+              aria-label="Five distorted characters. Use text challenge instead if you can't read this."></canvas>
+    </div>
+
+    <div class="alt-row">
+      <button type="button" class="linkish" id="toggle-alt">Quick Maths</button>
+    </div>
+
+    <!-- Easier alternative -->
+    <div class="field hidden" id="alt-box">
+      <p>Sorry... the image might be hard for you to read, here is some basic maths.</p>
+      <p class="alt-label">Question</p>
+      <p class="alt-q" id="alt-q"></p>
+    </div>
+
+    <div class="field">
+      <label for="answer">Your answer</label>
+      <input type="text" id="answer" autocomplete="off" autocapitalize="off"
+             autocorrect="off" spellcheck="false" maxlength="12">
+    </div>
+
+    <!-- Hidden trap for bots -->
+    <input class="honey" type="text" id="hp-city" name="city" tabindex="-1"
+           autocomplete="off" aria-hidden="true">
+
+    <button type="button" class="btn" id="verify">Verify</button>
+    <p class="msg" id="gate-msg" role="status" data-tone="mute"></p>
+
+    <p class="credit">Background building: KISA, South Korea [Chosubniz]</p>
+  </section>
+
+  <!-- Real page hidden at first behind honeypot -->
+  <main id="app" class="hidden" tabindex="-1">
+
+    <!-- Top banner image -->
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">한국 인터넷의 역사</p>
+          <h1>A History of the Internet in South Korea</h1>
+          <p class="sub">A brief history of arrival of internet in a cultural power!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page links as topbar (navbar) -->
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html" aria-current="page"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <!-- Opening words paragraph -->
+      <section class="band" aria-labelledby="intro-h">
+        <h2 id="intro-h">Twenty Years – Connection Spark</h2>
+
+        <div class="band-main prose">
+          <p>The following site lists history of South Korea beyond 2006. Although a country which
+            I will probably not visit, my inspiration of choosing Korea has been both from its enriched
+            history, <em>including inspiration of Samsung</em>, in what Asians can achieve, to the prowess
+            it commanded in <em>K-dramas</em>. By my birth, fibre cable was in almost many apartment blocks,
+            PC Bangs were full, and question stopped from being, <em>how to go online</em> and became <em>what
+              do we attain from it now that everyone uses it</em>. This site will follow and attempt to answer the second
+              question across those twenty years since.
+          </p>
+
+          <p>My main goal in this site is to represent it as a case study rather than an overt survey where each page takes a 
+            thread –– wires, gaming café, platforms, rules etc. and follow the timeline from 2006, all down to present, with events
+            and interactive figure sources. Since I am treating this site like a case study, or more like a "case book," I will make
+            claims rest on numbers, and the numbers cited inline, listing again at the foot page to make references accessible.
+          </p>
+
+          <p>Historically, the headline figure in Korea sits highly accessible. By January of 2024, 97.2% of population in Korea was online
+            and more mobile connections existed than people. <cite data-ref="datareportal-2024"></cite> Median fixed connection in Korea following
+            high connectivity, reached 233 Mbps, up nearly by around 50% in a single year. <cite data-ref="datareportal-2026"></cite>  As a psychological
+            inference, fast and ubiquitious speeds to load network pages, the argument for internet being fast just turned out to be no longer an exceptional merit!
+          </p>
+        </div>
+
+        <!-- Quick number facts -->
+        <aside class="band-side" aria-labelledby="stats-h">
+          <h3 id="stats-h" class="side-h">At a glance</h3>
+          <dl id="stats-list" class="stats"></dl>
+        </aside>
+      </section>
+
+      <!-- Network picture -->
+      <section class="band" id="graph" aria-labelledby="graph-h">
+        <h2 id="graph-h">Mapped Network</h2>
+
+        <div class="band-main">
+          <div id="graph-error" role="alert" hidden></div>
+
+          <!-- Drawn by script below -->
+          <svg id="graph-svg" viewBox="0 0 800 520" role="img"
+               aria-labelledby="graph-title graph-desc"
+               aria-describedby="graph-details">
+            <title id="graph-title">Network diagram</title>
+            <desc id="graph-desc">Loading.</desc>
+            <g id="graph-edges"></g>
+            <g id="graph-nodes"></g>
+          </svg>
+
+          <!-- Same data as table -->
+          <details id="graph-details">
+            <summary>View this data as a table</summary>
+            <table id="graph-table">
+              <caption>The same data as the diagram, rendered from the same JSON file. See Networks tab to obtain the file.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Connects to</th>
+                  <th scope="col">Since</th>
+                </tr>
+              </thead>
+              <tbody id="graph-tbody"></tbody>
+            </table>
+          </details>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Reading map</h3>
+          <p>The following diagram links ten vital carriers and organization where circles are company operators, exchange points,
+            research networks and submarine cables. The lines show logical connections between them, showing links with each progressing
+            year. Please slide back to 2006, and see the connections around the time continuing from that era.
+          </p>
+
+          <!-- Year slider -->
+          <div class="graph-controls">
+            <label for="year">Year</label>
+            <input type="range" id="year" min="2006" max="2026" value="2026" step="1" disabled>
+            <output id="year-out" for="year" aria-live="polite">2026</output>
+          </div>
+
+          <ul class="graph-key">
+            <li><i class="isp"></i> Internet provider</li>
+            <li><i class="ix"></i> Exchange point</li>
+            <li><i class="academic"></i> Research network</li>
+            <li><i class="cable"></i> Submarine cable</li>
+          </ul>
+
+          <p class="side-note">Three operators at top split are fixed-broadband market
+            roughly sharing the ratio 41&#8239;/&#8239;29&#8239;/&#8239;21 between them.<cite data-ref="apnic-2024"></cite></p>
+        </aside>
+      </section>
+
+      <!-- Links to other pages -->
+      <section class="band" aria-labelledby="inside-h">
+        <h2 id="inside-h">What's Inside &#128064;</h2>
+
+        <div class="band-main">
+          <ul class="tiles">
+            <li>
+              <a class="tile" href="timeline.html">
+                <span class="tile-ko" lang="ko">연표</span>
+                <span class="tile-t">Timeline</span>
+                <span class="tile-d">Twenty years of milestones from WiBro to 5G</span>
+              </a>
+            </li>
+            <li>
+              <a class="tile" href="network.html">
+                <span class="tile-ko" lang="ko">인프라</span>
+                <span class="tile-t">Network</span>
+                <span class="tile-d">Who owns the wires, who exchanges the traffic?</span>
+              </a>
+            </li>
+            <li>
+              <a class="tile" href="pcbang.html">
+                <span class="tile-ko" lang="ko">PC방</span>
+                <span class="tile-t">PC Bang</span>
+                <span class="tile-d">Gaming café after its peak</span>
+              </a>
+            </li>
+            <li>
+              <a class="tile" href="culture.html">
+                <span class="tile-ko" lang="ko">문화</span>
+                <span class="tile-t">Culture</span>
+                <span class="tile-d">Platforms, webtoons, and the cultural boom on Netflix!</span>
+              </a>
+            </li>
+            <li>
+              <a class="tile" href="policy.html">
+                <span class="tile-ko" lang="ko">정책</span>
+                <span class="tile-t">Policy</span>
+                <span class="tile-d">Real name rules, Shutdown Law, and people the network left behind</span>
+              </a>
+            </li>
+            <li>
+              <a class="tile" href="references.html">
+                <span class="tile-ko" lang="ko">참고문헌</span>
+                <span class="tile-t">References</span>
+                <span class="tile-d">Compilation of sources for this case study</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Scope</h3>
+          <dl class="scope">
+            <dt>Window</dt>
+            <dd>October 7, 2006 to present day coverage where I take several samples of information</dd>
+            <dt>Method</dt>
+            <dd>Interactive figures, figlets, numbered and well-cited sources, acting both formal for a research, and informal for anyone to get disemminated</dd>
+            <dt>Sources</dt>
+            <dd>Inline markers link to reference list</dd>
+          </dl>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Bottom of page, footer -->
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Define templates to be used from template engine -->
+  <script type="text/html" id="tpl-edges">
+    {{#edges}}
+    <line class="edge {{kind}}" x1="{{x1}}" y1="{{y1}}" x2="{{x2}}" y2="{{y2}}"></line>
+    {{/edges}}
+  </script>
+
+  <script type="text/html" id="tpl-nodes">
+    {{#nodes}}
+    <g class="node {{type}}">
+      <circle cx="{{x}}" cy="{{y}}" r="24"></circle>
+      <text x="{{x}}" y="{{labelY}}">{{label}}</text>
+    </g>
+    {{/nodes}}
+  </script>
+
+  <script type="text/html" id="tpl-rows">
+    {{#rows}}
+    <tr>
+      <th scope="row">{{label}}</th>
+      <td>{{typeLabel}}</td>
+      <td>{{connects}}</td>
+      <td>{{since}}</td>
+    </tr>
+    {{/rows}}
+  </script>
+
+  <script type="text/html" id="tpl-stats">
+    {{#stats}}
+    <div class="stat">
+      <dt>{{label}}</dt>
+      <dd>
+        <span class="stat-now">{{now}}<cite data-ref="{{refNow}}"></cite></span>
+        <span class="stat-note">{{nowNote}}</span>
+        <span class="stat-then">{{then}}<cite data-ref="{{refThen}}"></cite></span>
+        <span class="stat-note">{{thenNote}}</span>
+      </dd>
+    </div>
+    {{/stats}}
+  </script>
+
+  <!-- Load order matters since some vendors act first -->
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/render.js"></script>
+  <script src="assets/js/refs.js"></script>
+  <script src="assets/js/gate.js" defer></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

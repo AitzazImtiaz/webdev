@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Korean PC bang after its peak: 23,548 venues in 2001, under 7,000 today, and an industry that is growing anyway.">
+  <title>PC Bang</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+  <style>
+    #room { width: 100%; height: auto; display: block; margin-bottom: 18px; }
+    .seat { fill: #d8d6d0; stroke: #c3c1ba; stroke-width: 1; }
+    .seat.mine { fill: #24382c; }
+    .seat.theirs { fill: #9b2242; }
+    .seat-n { font-family: var(--mono); font-size: 9px; fill: rgba(31,41,36,.5); }
+    .ghost { fill: #9b2242; opacity: .8; }
+    .link-box { margin: 0 0 14px; }
+    .link-box textarea {
+      width: 100%; height: 64px; padding: 8px 10px; border: var(--hairline);
+      background: var(--card); font-family: var(--mono); font-size: 11px;
+      line-height: 1.4; resize: vertical;
+    }
+    .link-box label {
+      display: block; margin-bottom: 4px; font-family: var(--mono);
+      font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
+      color: rgba(31,41,36,.55);
+    }
+    .wire-log {
+      height: 120px; margin: 0; padding: 10px 12px; overflow-y: auto;
+      border: var(--hairline); background: var(--card);
+      font-family: var(--mono); font-size: 12px; line-height: 1.7;
+    }
+    .wire-log p { margin: 0; }
+    .wire-log .me { color: var(--pine); }
+    .wire-log .sys { color: rgba(31,41,36,.45); }
+    .wire-say { display: flex; gap: 8px; margin-top: 10px; }
+    .wire-say input {
+      flex: 1; min-width: 0; padding: 8px 10px; border: var(--hairline);
+      background: var(--card); font-family: var(--mono); font-size: 12px;
+    }
+    .bars { width: 100%; height: auto; display: block; }
+    .bar { fill: #24382c; }
+    .bar-l { font-family: var(--mono); font-size: 10px; fill: rgba(31,41,36,.75); }
+    .bar-y { font-family: var(--mono); font-size: 9px; fill: rgba(31,41,36,.45); }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Turn it on to continue.</p>
+  </noscript>
+
+  <main id="app" tabindex="-1">
+
+    <!-- Top banner image -->
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">PC방 문화</p>
+          <h1>The Room After the Peak</h1>
+          <p class="sub">23548 venues in 2001. Under 7,000 now. The industry is growing anyway!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page links -->
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html" aria-current="page"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <!-- Two browser room demo -->
+      <section class="band" aria-labelledby="lan-h">
+        <h2 id="lan-h">Take a seat</h2>
+
+        <div class="band-main">
+          <p class="tl-note">You might be tired of reading too much... So. Well. Why not try a PC Bang yourself! Please open this 
+            page on a second browser window, or a seperate device on the same network. Follow three steps on right and two browsers/windows 
+            will act like a PC Bang and direct;y talk to each other, without any server betweem them! Pick a seat, move your cursor, and find out 
+            where is the cursor of the person you're connected with!
+          </p>
+
+          <!-- Drawn by script below -->
+          <svg id="room" viewBox="0 0 800 300" role="img"
+               aria-label="A floor plan of twenty four PC bang seats. Selecting a seat is also possible from the seat list below!">
+            <g id="seats"></g>
+            <g id="ghosts"></g>
+          </svg>
+
+          <!-- Messages between the two -->
+          <div class="wire-log" id="log" aria-live="polite">
+            <p class="sys">Not connected. Nothing has left this browser. :/</p>
+          </div>
+
+          <div class="wire-say">
+            <label class="sr-only" for="say">Message</label>
+            <input type="text" id="say" placeholder="say something across the room!"
+                   maxlength="80" autocomplete="off" disabled>
+            <button type="button" class="linkish" id="send" disabled>Send</button>
+          </div>
+
+          <!-- Same seats as table -->
+          <details id="graph-details">
+            <summary>Choose a seat without floor plan</summary>
+            <table id="graph-table">
+              <caption>The same twenty-four seats as the plan above.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Seat</th>
+                  <th scope="col">Row</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="seat-tbody"></tbody>
+            </table>
+          </details>
+        </div>
+
+        <!-- Steps to connect -->
+        <aside class="band-side">
+          <h3 class="side-h">Connect two seats</h3>
+
+          <p>This mechanism does not use HTTP protocol, going beyond to use WebRTC protocol which comes by default in web browsers. Two browsers 
+            exchange a hashed code to establish a connection, talking directly. No communication happens to any server, making this a p2p secure channel, working
+            even without internet if a LAN connection is made between the computers!
+          </p>
+
+          <div class="tl-bar">
+            <button type="button" class="linkish" id="host">1 · Host</button>
+            <button type="button" class="linkish" id="join">1 · Join</button>
+            <button type="button" class="linkish" id="drop">Reset</button>
+          </div>
+
+          <div class="link-box">
+            <label for="mine">2 · Your code — send it over</label>
+            <textarea id="mine" readonly
+                      placeholder="Press Host or Join first."></textarea>
+          </div>
+
+          <div class="link-box">
+            <label for="theirs">3 · Their code — paste it here</label>
+            <textarea id="theirs" placeholder="Paste, then press Connect."></textarea>
+          </div>
+
+          <div class="tl-bar">
+            <button type="button" class="linkish" id="connect">Connect</button>
+          </div>
+
+          <p class="side-note">A session description is several kilobytes of text.
+            <code>lz-string</code> module squeezes it to something you can paste and carry!</p>
+        </aside>
+      </section>
+
+      <!-- Venue count over time -->
+      <section class="band" aria-labelledby="count-h">
+        <h2 id="count-h">Sixteen thousand rooms gone!</h2>
+
+        <div class="band-main">
+          <div id="pc-error" class="ref-error" hidden></div>
+          <svg id="chart" class="bars" viewBox="0 0 800 320" role="img"
+               aria-label="A bar chart of PC bang venue counts from 1997 to 2025, peaking at 23,548 in 2001 and falling to 6,983 by 2025."></svg>
+
+          <div class="prose">
+            <p>By 1997, the country had roughly hundred PC bangs, which rised to fifteen thousand three years later, and by 2001 this peaked to 23,548 rooms, 
+              a room in nearly every commercial block of urban korea! <cite data-ref="crafted-pcbang-2026"></cite>
+            </p>
+
+            <p>Contrarily, National Tax Services figures saw drop of 10568 rooms in 2017, down to 7,310 by 2024, approximately halving. <cite data-ref="asiae-pcbang-2025"></cite>
+            Korea Creative Content Agency's white paper recorded 7243 for 2024, another recurring (fifth) consecutive fall, and by August 2025 this figure came down to 6,983. (which
+            is roughly 70% reduction from peak) <cite data-ref="epickor-pcbang-2026"></cite> </p>
+
+            <p>This sounds like a drop, implying that the industry is failing. As a caution, KOCCA white papers and industry surveys slighly differ in reporting, which is why you may find some sources 
+              quoting "around 20k" for years when others report half of it. This trend is unambiguous because some PC Bangs count as business, others do not.
+            </p>
+          </div>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">The count</h3>
+          <dl class="scope">
+            <dt>1997</dt><dd>≈100 venues</dd>
+            <dt>2001</dt><dd>23548 — peak</dd>
+            <dt>2017</dt><dd>10568</dd>
+            <dt>2025</dt><dd>6983</dd>
+          </dl>
+          <p class="side-note">Roughly a 70% fall across quarter century.<cite data-ref="crafted-pcbang-2026"></cite></p>
+        </aside>
+      </section>
+
+      <!-- Fewer rooms, more money explanation -->
+      <section class="band" aria-labelledby="para-h">
+        <h2 id="para-h">The rooms are closing. The business is growing.</h2>
+
+        <div class="band-main prose">
+          <p>Both sound contradictory, but the premise I am going to present might clarify. In 2024
+            PC bang industry revenue rose 12.8% to around approximately ₩2.26 trillion. This is a three times 
+            faster rise than Korean gaming industry on whole where fewer venues are paying more money!<cite data-ref="crafted-pcbang-2026"></cite> 
+          </p>
+
+          <p>But... why? Part of it is consolidation, those surviving this era of PC bang keep coming back to reinvest as whales. By rough estimates,
+            73% of operators did not require any PC upgrades at all in 2024 and only 6.3% of operators replaced their entire systems, hence making a PC bang environment
+            only dependent on if the room and service is good or tired. <cite data-ref="epickor-pcbang-2026"></cite> Part of it is also that PC bang was never selling internet 
+            access to begin with, though it seems like, its popularity got widespread in gamers earlier on.
+          </p>
+          
+          <p>Around my birth, 94% of Korean households already had broadband and anyone walking into PC bang in 2006 had a connection home. They were not after internet, but buying the 
+            room to have friends in a row, shouting across and watching each other's screens. It acted like a digital environment where hangout was physical, being only service providing physical
+            company over wires!
+          </p>
+          
+          <p>This is why demo above is floor plan rather than a simple chat window :) To show the empty rooms and tell what other people can achieve by filling the room only two people can right now.
+            People coming at arm's length on same network. Out of breaking procedural etiquette, I dedicate this to Aryan Ghani and Ye Yulian (Lolu), motivation behind this work encompassed my memories 
+            about you 
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">2024 in one line</h3>
+          <dl class="scope">
+            <dt>Revenue</dt>
+            <dd>≈₩2.26 trillion up 12.8%</dd>
+            <dt>Venues</dt>
+            <dd>7,243 down 530 in a year</dd>
+            <dt>Hourly rate</dt>
+            <dd>₩1,246 members; ₩1,459 otherwise</dd>
+          </dl>
+          <p class="side-note">Prices have barely moved since late 1990s.<cite data-ref="epickor-pcbang-2026"></cite></p>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Bottom of page -->
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Load order matters -->
+  <script src="vendor/lz-string.min.js"></script>
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/refs.js"></script>
+
+  <!-- Template for diagram -->
+  <script type="text/html" id="tpl-seats">
+    {{#seats}}
+    <tr>
+      <th scope="row">{{n}}</th>
+      <td>Row {{row}}</td>
+      <td><button type="button" class="linkish" data-seat="{{n}}">Take this seat</button></td>
+    </tr>
+    {{/seats}}
+  </script>
+  <script src="assets/js/pcbang.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

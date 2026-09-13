@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Who owns South Korea's wires, where the traffic is exchanged, and which cables carry it out: an interactive map of the network behind the country's internet.">
+  <title>Network</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+  <style>
+    #cy {
+      width: 100%;
+      height: 520px;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 560px) {
+      #cy { height: 400px; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Turn it on to continue.</p>
+  </noscript>
+
+  <main id="app" tabindex="-1">
+
+    <!-- Top banner image -->
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">인프라</p>
+          <h1>Wires, Exchanges, Cables</h1>
+          <p class="sub">Three operators, and a handful of exchange points, and nine cables to rest of the world.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page links as topbar (navbar) -->
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html" aria-current="page"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <!-- Interactive map -->
+      <section class="band" aria-labelledby="map-h">
+        <h2 id="map-h">The Network Mapped (Revisited!)</h2>
+
+        <div class="band-main">
+          <div id="graph-error" role="alert" hidden></div>
+
+          <!-- Drawn by script below -->
+          <div id="cy" role="img"
+               aria-label="The following is interactive node-edges link map of ten korean network organizations with connections between them. Same data is accessible as data below."></div>
+
+          <div id="net-detail" class="tl-detail" aria-live="polite"></div>
+
+          <!-- Same data as table -->
+          <details id="graph-details">
+            <summary>View this data as table</summary>
+            <table id="graph-table">
+              <caption>The same organisations and links as map on home page are rendered from a JSON file. Click <a href="data/network.json">here</a> to see.</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Connects to</th>
+                  <th scope="col">Since</th>
+                </tr>
+              </thead>
+              <tbody id="net-tbody"></tbody>
+            </table>
+          </details>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Using this!</h3>
+          <p>Please drag any node to rearrange it in a custom order. You may also drag background to zoom and slide, and click
+            a node to view its information. Layout buttons below rearrange everything without changing data. You may also view every
+            organization as a row in table below the diagram, for accessibility purpose just in case you do not depend solely on the map.
+          </p>
+
+          <!-- Layout buttons -->
+          <div class="tl-bar">
+            <button type="button" class="linkish" id="net-preset">Map</button>
+            <button type="button" class="linkish" id="net-circle">Circle</button>
+            <button type="button" class="linkish" id="net-fit">Fit</button>
+          </div>
+
+          <ul class="graph-key">
+            <li><i class="isp"></i> Internet provider</li>
+            <li><i class="ix"></i> Exchange point</li>
+            <li><i class="academic"></i> Research network</li>
+            <li><i class="cable"></i> Submarine cable</li>
+          </ul>
+
+          <p class="side-note">Please note: solid lines are logical peer, thick-lines are backbone, and dashed-lines are
+            submarine cable landings.</p>
+        </aside>
+      </section>
+
+      <!-- Who owns the wires paragraph -->
+      <section class="band" aria-labelledby="own-h">
+        <h2 id="own-h">Who owns the wires?</h2>
+
+        <div class="band-main prose">
+          <p>In Korea, almost three network companies hold entire fixed-broadband market. KT
+            which is the former state monopooly, almost held around 41% of subscribers in 2023,
+            roughly amounting to 9.8 million households. SK broadband, owned by SK, which was consequentially
+            bought from Hanaro Telecom in 2008, held about 29%. LG U+ held around 21%, making the other
+            remaining fraction owned by cable system operators. <cite data-ref="apnic-2024"></cite>
+          </p>
+
+          <p>An inference that I pick from here is consequential fact that Korean internet roster relies
+            on three providers, explaining a lot of information elsewhere on this site. The correlation That
+            I am trying to make essentially is, a routing error from one company in October 2021 could cut off
+            service to 16.5 million customers at once, blocking them from using card payments, assessing clinical record 
+            systems, and attending online classes in Covid era. <cite data-ref="reuters-kt-2021"></cite> At the time, for internet
+            access, 14.3 million people depended on KT! <cite data-ref="koreaherald-kt-2021"></cite> 
+          </p>
+
+          <p>Subsequentially, this is why peering disputes matter which I will discuss on <a href="culture.html">Culture</a> page.
+            If three companies own cables, negotiations about who pays for traffic, especially when considering their shares, does not
+            become a negotiation between equals.          
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Market share, 2023</h3>
+          <dl class="scope">
+            <dt>KT</dt>
+            <dd>≈41% · 9.8 million subscribers</dd>
+            <dt>SK Broadband</dt>
+            <dd>≈29% · 6.8 million subscribers</dd>
+            <dt>LG U+</dt>
+            <dd>≈21% · 5.1 million subscribers</dd>
+          </dl>
+          <p class="side-note">Statistics obtained via APNIC.<cite data-ref="apnic-2024"></cite></p>
+        </aside>
+      </section>
+
+      <!-- Where traffic meets paragraph -->
+      <section class="band" aria-labelledby="ix-h">
+        <h2 id="ix-h">Where traffic meets</h2>
+
+        <div class="band-main prose">
+          <p>In retro vintage times, era dated before 1995 when internet was developing as a utility
+            and ARPANET was just decomissioned to broad the technology, meant Korean traffic between two networks was routed across Pacific, being back-and-forth
+            slow and expensive, worsening as users grew every year. The government realized this and so Korea Computerization
+            Agency built the country's first domesticated exchange system in 1995, which unfortunately they could not
+            keep operating, so it was handled over to private hands; LG U+ getting DIX, and KT getting KTIX.
+          </p>
+
+          <p>By the time ISPs were forming in Korea, this led to a awkward situation where carrier-run exchanges had to react.
+            Sixteen of them responded in forming KINX in June 1999, the Korea Internet Neutral eXchange. It came to be the persistent,
+            still modern day, only neutral exchange in Korea and half of its members are now international.
+          </p>
+
+          <p>Modern day Korea runs atleast five non-trivial exchange points. Network reaches outside world through nine submarine cables
+            landing at four coastal stations with additional capacity enhanced in 2004. <cite data-ref="apnic-2024"></cite>
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">But why neutrality matters?</h3>
+          <p>This is an important inference to make here, carrier exchange and their operations exposes a market which is influenced with views of
+            leverage and concern with traffic belonging to rivals. A neutral exchange should be born, which jointly governs and being settlement-free,
+            focuses on improvement of the internet overall, the reason being sixteen competing providers were willing to build upon it together.
+          </p>
+          <p class="side-note">KINX is only neutral exchange in the country and has
+            been since 1999. It has survived since origin of internet and does not compete.</p>
+        </aside>
+      </section>
+
+      <!-- Speed is no longer exceptional -->
+      <section class="band" aria-labelledby="fast-h">
+        <h2 id="fast-h">Fast, as said, no longer exceptional</h2>
+
+        <div class="band-main prose">
+          <p>Korea earned its fame earlier on per se. By 2006 94% of hoursehold residents had broadband connection, which was highest
+            rate in OECD, roughly being fifty five times that of Turkey. <cite data-ref="abs-oecd-2006"></cite> Five years later, Akamai 
+            measured Korea as fastest country on earthwhich averaged 17.5 Mbps compared against United States 5.8 Mbps of that time. <cite data-ref="akamai-2011"></cite>
+          </p>
+
+          <p>Absolute numbers in general climbed in Korea, as noted around end of 2025, when median fixed download speed reached 233 Mbps, which is a 47.9% hike in a single year!
+            <cite data-ref="datareportal-2026"></cite> However, Korea did fall from these relative positions when fibre cables got widespread, and Korea stopped defining these tables 
+            when other countries with higher budgets pushed forth 5G. 
+          </p>
+
+          <p>This is a non-trivial take, and one around this site is build in my opinion. Physical network was built earlier on, with remaining story of platform, policy and culture
+            including the emphasis on the social boom.
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Then and now</h3>
+          <dl class="scope">
+            <dt>2006</dt>
+            <dd>94% of households on broadband; first record-breaking in OECD.<cite data-ref="abs-oecd-2006"></cite></dd>
+            <dt>2011</dt>
+            <dd>17.5 Mbps average; fastest in world.<cite data-ref="akamai-2011"></cite></dd>
+            <dt>2025</dt>
+            <dd>233 Mbps median and 97.2% of population in online coverage.<cite data-ref="datareportal-2024"></cite></dd>
+          </dl>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <!-- Bottom of page, footer -->
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <!-- Define templates to be used from template engine -->
+  <script type="text/html" id="tpl-net-rows">
+    {{#rows}}
+    <tr>
+      <th scope="row">{{label}}</th>
+      <td>{{typeLabel}}</td>
+      <td>{{connects}}</td>
+      <td>{{since}}</td>
+    </tr>
+    {{/rows}}
+  </script>
+
+  <script type="text/html" id="tpl-net-detail">
+    <p class="tl-when">{{typeLabel}}</p>
+    <h3 class="tl-title">{{label}}</h3>
+    <p class="tl-note">{{note}}</p>
+  </script>
+
+  <!-- Load order matters since some vendors act first -->
+  <script src="vendor/cytoscape.min.js"></script>
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/refs.js"></script>
+  <script src="assets/js/network.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

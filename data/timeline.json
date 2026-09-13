@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "title": "Twenty years of Korean network history",
+    "yearFrom": 2006,
+    "yearTo": 2026
+  },
+  "categories": [
+    { "id": "infra",    "label": "Infrastructure", "color": "#24382c" },
+    { "id": "mobile",   "label": "Mobile",         "color": "#4a6b57" },
+    { "id": "platform", "label": "Platforms",      "color": "#9b2242" },
+    { "id": "policy",   "label": "Policy",         "color": "#7a8b80" },
+    { "id": "incident", "label": "Incidents",      "color": "#b8763e" }
+  ],
+  "events": [
+    { "id": "broadband06", "date": "2006-01", "category": "infra", "title": "94% of households on broadband", "note": "The highest household broadband penetration in the OECD, four months before I was born.", "ref": "abs-oecd-2006" },
+    { "id": "wibro", "date": "2006-06", "category": "mobile", "title": "WiBro launches in Seoul", "note": "Commercial mobile WiMAX, the first attempt at broadband away from the wall socket.", "ref": null },
+    { "id": "wipi-decision", "date": "2008-12", "category": "policy", "title": "KCC votes to scrap WIPI", "note": "The domestic middleware mandate, in force since April 2005, had effectively barred foreign handsets from the market.", "ref": "yonhap-wipi-2008" },
+    { "id": "mobile08", "date": "2008-12", "category": "mobile", "title": "45.6 million mobile subscribers", "note": "Over 93% of the population, in a country of 48.6 million.", "ref": "kcc-2008" },
+    { "id": "wipi", "date": "2009-04", "category": "policy", "title": "WIPI mandate lifted", "note": "From 1 April, handsets no longer needed the Korean platform built in.", "ref": "koreatimes-wipi-2008" },
+    { "id": "iphone", "date": "2009-11", "category": "mobile", "title": "iPhone launches on KT", "note": "Queues formed 26 hours early for the first 1,000 units; pre-orders approached 65,000.", "ref": "fortune-iphone-2009" },
+    { "id": "kakao", "date": "2010-03", "category": "platform", "title": "KakaoTalk launches", "note": "Free messaging over data begins displacing paid SMS.", "ref": null },
+    { "id": "lgu", "date": "2010-01", "category": "infra", "title": "LG U+ formed", "note": "LG Telecom, Dacom and Powercom merge into a third national operator.", "ref": null },
+    { "id": "lte", "date": "2011-07", "category": "mobile", "title": "LTE goes commercial", "note": "SK Telecom and LG U+ switch on 4G.", "ref": null },
+    { "id": "nate", "date": "2011-07", "category": "incident", "title": "Nate and Cyworld breached", "note": "Roughly 35 million accounts exposed.", "ref": null },
+    { "id": "shutdown", "date": "2011-11", "category": "policy", "title": "Shutdown Law takes effect", "note": "From 20 November, under-16s blocked from online games between midnight and 6am. Korea was the first country to try it.", "ref": "register-curfew-2011" },
+    { "id": "speed11", "date": "2011-12", "category": "infra", "title": "World's fastest at 17.5 Mbps", "note": "Akamai puts Korea first globally; the United States is thirteenth at 5.8 Mbps.", "ref": "akamai-2011" },
+    { "id": "realname", "date": "2012-08", "category": "policy", "title": "Real-name system struck down", "note": "On 23 August the Constitutional Court rules unanimously that mandatory identity verification violates free expression.", "ref": "koreaherald-realname-2012" },
+    { "id": "realname-case", "date": "2012-08", "category": "policy", "title": "2010Hun-Ma47 decided", "note": "The Court found the public benefit too small to justify the restriction, and noted users had simply moved to foreign sites.", "ref": "columbia-realname-2012" },
+    { "id": "netflix", "date": "2016-01", "category": "platform", "title": "Netflix enters Korea", "note": "Foreign streaming arrives on a network already built for it.", "ref": null },
+    { "id": "fiveg", "date": "2019-04", "category": "mobile", "title": "5G goes commercial", "note": "Korea claims the world's first nationwide consumer 5G launch.", "ref": null },
+    { "id": "covid", "date": "2020-03", "category": "incident", "title": "Schools move online", "note": "The pandemic pushes education onto the network and empties the PC bangs.", "ref": null },
+    { "id": "squid", "date": "2021-09", "category": "platform", "title": "Squid Game released", "note": "Korean production reaches a global audience through foreign distribution.", "ref": null },
+    { "id": "ktoutage", "date": "2021-10", "category": "incident", "title": "KT nationwide outage", "note": "A routing error cuts service to 16.5 million customers for about 40 minutes, stopping online classes, card payments and clinic records.", "ref": "reuters-kt-2021" },
+    { "id": "ktoutage-impact", "date": "2021-10", "category": "incident", "title": "What the outage reached", "note": "Around 14.3 million people relied on KT for internet service as of March 2021.", "ref": "koreaherald-kt-2021" },
+    { "id": "curfew-repeal", "date": "2021-08", "category": "policy", "title": "Government moves to scrap the curfew", "note": "Two ministries announce the Shutdown Law will go, ten years on, replaced by a parental choice system.", "ref": "koreaherald-curfew-2021" },
+    { "id": "curfew-end", "date": "2021-12", "category": "policy", "title": "Gaming curfew ends", "note": "From midnight on 31 December the decade-old shutdown is abolished. Mobile games, by then 54% of the market, were never covered by it.", "ref": "koreaherald-curfewend-2021" },
+    { "id": "ranking", "date": "2022-11", "category": "infra", "title": "Speed ranking slips to 34th", "note": "Once second in the world for fixed broadband, Korea is overtaken.", "ref": null },
+    { "id": "median", "date": "2025-12", "category": "infra", "title": "Median fixed speed hits 233 Mbps", "note": "Up 47.9% in a single year, on Ookla's measure.", "ref": "datareportal-2026" }
+  ]
+}

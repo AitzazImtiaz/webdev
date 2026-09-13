@@ -1,0 +1,250 @@
+{
+  "datareportal-2024": {
+    "author": "Kemp, S.",
+    "year": 2024,
+    "title": "Digital 2024: South Korea",
+    "publisher": "DataReportal",
+    "url": "https://datareportal.com/reports/digital-2024-south-korea",
+    "accessed": "2026-08-07"
+  },
+  "datareportal-2026": {
+    "author": "Kemp, S.",
+    "year": 2026,
+    "title": "Digital 2026: South Korea",
+    "publisher": "DataReportal",
+    "url": "https://datareportal.com/reports/digital-2026-south-korea",
+    "accessed": "2026-08-07"
+  },
+  "apnic-2024": {
+    "author": "APNIC",
+    "year": 2024,
+    "title": "The Internet landscape of South Korea and KRNOG update",
+    "publisher": "APNIC Blog",
+    "url": "https://blog.apnic.net/2024/03/19/the-internet-landscape-of-south-korea-and-krnog-update/",
+    "accessed": "2026-08-07"
+  },
+  "abs-oecd-2006": {
+    "author": "Australian Bureau of Statistics",
+    "year": 2007,
+    "title": "8146.0 Household Use of Information Technology, Australia, 2006-07: International comparisons (OECD data)",
+    "publisher": "Australian Bureau of Statistics",
+    "url": "https://www.abs.gov.au/Ausstats/abs@.nsf/7d12b0f6763c78caca257061001cc588/dcf3241f825cfb8dca2573b6001767eb!OpenDocument",
+    "accessed": "2026-08-08"
+  },
+  "kcc-2008": {
+    "author": "Associated Press",
+    "year": 2009,
+    "title": "Korea has nearly as many cell phones as people (Korea Communications Commission figures)",
+    "publisher": "NBC News",
+    "url": "https://www.nbcnews.com/news/amp/wbna28893283",
+    "accessed": "2026-08-08"
+  },
+  "akamai-2011": {
+    "author": "Kennedy, J.",
+    "year": 2012,
+    "title": "Hard data on the state of the Internet (Akamai State of the Internet, Q4 2011)",
+    "publisher": "Fierce Network",
+    "url": "https://www.fierce-network.com/telecom/hard-data-state-internet",
+    "accessed": "2026-08-10"
+  },
+  "pbs-nida-2008": {
+    "author": "PBS Frontline",
+    "year": 2009,
+    "title": "Digital Nation: The most wired place on Earth (NIDA figures)",
+    "publisher": "PBS",
+    "url": "https://www.pbs.org/wgbh/pages/frontline/digitalnation/living-faster/where-are-we-headed/the-most-wired-place-on-earth.html",
+    "accessed": "2026-09-05"
+  },
+  "yonhap-wipi-2008": {
+    "author": "Yonhap News Agency",
+    "year": 2008,
+    "title": "S. Korea drops software requirement on handsets",
+    "publisher": "Yonhap News Agency",
+    "url": "https://oananews.org/node/34920",
+    "accessed": "2026-08-08"
+  },
+  "koreatimes-wipi-2008": {
+    "author": "The Korea Times",
+    "year": 2008,
+    "title": "Goodbye WIPI, Hello iPhone",
+    "publisher": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/business/tech-science/20081210/goodbye-wipi-hello-iphone",
+    "accessed": "2026-08-09"
+  },
+  "fortune-iphone-2009": {
+    "author": "Elmer-DeWitt, P.",
+    "year": 2009,
+    "title": "The iPhone's got Seoul",
+    "publisher": "Fortune",
+    "url": "https://fortune.com/2009/11/28/the-iphones-got-seoul",
+    "accessed": "2026-08-09"
+  },
+  "koreaherald-realname-2012": {
+    "author": "The Korea Herald",
+    "year": 2012,
+    "title": "Court nixes real name Internet law",
+    "publisher": "The Korea Herald",
+    "url": "https://www.koreaherald.com/article/10371380",
+    "accessed": "2026-08-11"
+  },
+  "columbia-realname-2012": {
+    "author": "Columbia Global Freedom of Expression",
+    "year": 2012,
+    "title": "Identity Verification System on Internet, 2010Hun-Ma47",
+    "publisher": "Columbia University",
+    "url": "https://globalfreedomofexpression.columbia.edu/cases/internet-identity-verification-system/",
+    "accessed": "2026-08-11"
+  },
+  "reuters-kt-2021": {
+    "author": "Cha, S.",
+    "year": 2021,
+    "title": "Routing error caused network outage, South Korean telco KT says",
+    "publisher": "Reuters",
+    "url": "https://www.nasdaq.com/articles/routing-error-caused-network-outage-south-korean-telco-kt-says-2021-10-25",
+    "accessed": "2026-08-12"
+  },
+  "koreaherald-kt-2021": {
+    "author": "The Korea Herald",
+    "year": 2021,
+    "title": "KT suffers major network outage nationwide",
+    "publisher": "The Korea Herald",
+    "url": "https://m.koreaherald.com/article/2713348",
+    "accessed": "2026-08-13"
+  },
+  "koreaherald-curfew-2021": {
+    "author": "The Korea Herald",
+    "year": 2021,
+    "title": "Korea to ax games curfew",
+    "publisher": "The Korea Herald",
+    "url": "https://www.koreaherald.com/article/2677962",
+    "accessed": "2026-08-14"
+  },
+  "koreaherald-curfewend-2021": {
+    "author": "The Korea Herald",
+    "year": 2021,
+    "title": "Decade-old gaming curfew ends at midnight Friday",
+    "publisher": "The Korea Herald",
+    "url": "https://www.koreaherald.com/article/2748203",
+    "accessed": "2026-08-15"
+  },
+  "register-curfew-2011": {
+    "author": "The Register",
+    "year": 2011,
+    "title": "Sth Korean gamers suffer joystick curfew shock",
+    "publisher": "The Register",
+    "url": "https://www.theregister.com/2011/11/29/sthkorea_gaming_curfew/",
+    "accessed": "2026-08-10"
+  },
+  "crafted-pcbang-2026": {
+    "author": "82 Crafted",
+    "year": 2026,
+    "title": "Korea Lost 16,000 PC방 and the Industry Got Bigger: The Gaming Café, Explained",
+    "publisher": "82 Crafted",
+    "url": "https://82crafted.com/tech/korean-pc-bang-explained",
+    "accessed": "2026-08-15"
+  },
+  "asiae-pcbang-2025": {
+    "author": "The Asia Business Daily",
+    "year": 2025,
+    "title": "\"These Days, I Play Games at Home\": The Disappearing PC Bang",
+    "publisher": "The Asia Business Daily",
+    "url": "https://www.asiae.co.kr/en/article/2025021416103060903",
+    "accessed": "2026-08-16"
+  },
+  "epickor-pcbang-2026": {
+    "author": "Epickor",
+    "year": 2026,
+    "title": "How Many PC Bangs Are in Korea? Count, Prices, and Rules",
+    "publisher": "Epickor",
+    "url": "https://www.epickor.com/blog/170",
+    "accessed": "2026-08-17"
+  },
+  "kis-pcbang-2022": {
+    "author": "Larson, J.",
+    "year": 2022,
+    "title": "Revisiting the Rise and Fall of PC Bangs in Korea (Korea Creative Content Agency white papers)",
+    "publisher": "Korea's Information Society",
+    "url": "http://www.koreainformationsociety.com/2022/07/revisiting-rise-and-fall-of-pc-bangs.html",
+    "accessed": "2026-09-06"
+  },
+  "koreaherald-netflix-2023": {
+    "author": "The Korea Herald",
+    "year": 2023,
+    "title": "SK, Netflix settle yearslong legal battle over net usage fees, vow to work together",
+    "publisher": "The Korea Herald",
+    "url": "https://www.koreaherald.com/article/3217447",
+    "accessed": "2026-08-21"
+  },
+  "kedglobal-netflix-2023": {
+    "author": "KED Global",
+    "year": 2023,
+    "title": "Netflix, S.Korea's SK Broadband to settle longstanding legal dispute",
+    "publisher": "The Korea Economic Daily",
+    "url": "https://www.kedglobal.com/entertainment/newsView/ked202309180015",
+    "accessed": "2026-08-25"
+  },
+  "techcrunch-skb-2021": {
+    "author": "Kim, K.",
+    "year": 2021,
+    "title": "South Korean ISP SK Broadband counterclaims against Netflix for bandwidth usage fees",
+    "publisher": "TechCrunch",
+    "url": "https://techcrunch.com/2021/09/30/south-korean-isp-sk-broadband-counterclaims-against-netflix-for-bandwidth-usage-fees",
+    "accessed": "2026-08-29"
+  },
+  "bloomberg-netflix-2023": {
+    "author": "Layton, R.",
+    "year": 2023,
+    "title": "Netflix, Korea Broadband Settlement May Signal Funding Trend",
+    "publisher": "Bloomberg Law",
+    "url": "https://news.bloomberglaw.com/us-law-week/netflix-korea-broadband-settlement-may-signal-funding-trend",
+    "accessed": "2026-09-02"
+  },
+  "loc-inapp-2021": {
+    "author": "Library of Congress",
+    "year": 2021,
+    "title": "South Korea: Amended Telecommunications Business Act Will Ban App Payment Monopolies",
+    "publisher": "Global Legal Monitor",
+    "url": "https://www.loc.gov/item/global-legal-monitor/2021-09-16/south-korea-amended-telecommunications-business-act-will-ban-app-payment-monopolies/",
+    "accessed": "2026-08-28"
+  },
+  "koreatimes-inapp-2022": {
+    "author": "The Korea Times",
+    "year": 2022,
+    "title": "South Korean regulator unveils guideline on world's 1st in-app payment law",
+    "publisher": "The Korea Times",
+    "url": "https://www.koreatimes.co.kr/business/tech-science/20220310/south-korean-regulator-unveils-guideline-on-worlds-1st-in-app-payment-law",
+    "accessed": "2026-09-01"
+  },
+  "iapp-pipa-2016": {
+    "author": "International Association of Privacy Professionals",
+    "year": 2016,
+    "title": "GDPR matchup: South Korea's Personal Information Protection Act",
+    "publisher": "IAPP",
+    "url": "https://iapp.org/news/a/gdpr-matchup-south-koreas-personal-information-protection-act",
+    "accessed": "2026-08-23"
+  },
+  "ihc-privacy-2020": {
+    "author": "In-House Community",
+    "year": 2020,
+    "title": "Amendments to three data privacy laws in Korea and the implications",
+    "publisher": "In-House Community",
+    "url": "https://www.inhousecommunity.com/article/amendments-three-data-privacy-laws-korea-implications/",
+    "accessed": "2026-08-22"
+  },
+  "cookiescript-pipa-2025": {
+    "author": "CookieScript",
+    "year": 2025,
+    "title": "South Korean Data Privacy Law: A Comprehensive Guide",
+    "publisher": "CookieScript",
+    "url": "https://cookie-script.com/privacy-laws/south-korean-data-privacy-law",
+    "accessed": "2026-08-26"
+  },
+  "dlapiper-kr-2026": {
+    "author": "DLA Piper",
+    "year": 2026,
+    "title": "Data protection laws in South Korea",
+    "publisher": "Data Protection Laws of the World",
+    "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=KR",
+    "accessed": "2026-09-04"
+  }
+}

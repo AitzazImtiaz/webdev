@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cytoscape": "^3.34.3",
+    "d3-array": "^3.2.4",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-shape": "^3.2.0",
+    "lz-string": "^1.5.0",
+    "scrollama": "^3.2.0",
+    "sql.js": "^1.14.2"
+  },
+  "devDependencies": {
+    "@codemirror/lang-sql": "^6.10.0",
+    "@codemirror/state": "^6.7.4",
+    "@codemirror/view": "^6.43.11",
+    "codemirror": "^6.0.2",
+    "esbuild": "^0.28.2",
+    "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "a11y": "pa11y-ci",
+    "html": "html-validate \"*.html\"",
+    "build:culture": "esbuild assets/js/culture.js --bundle --minify --format=iife --target=es2018 --outfile=vendor/culture.bundle.js",
+    "watch:culture": "esbuild assets/js/culture.js --bundle --format=iife --target=es2018 --outfile=vendor/culture.bundle.js --watch",
+    "build:db": "node assets/build/make-db.js",
+    "build:policy": "esbuild assets/js/policy.js --bundle --minify --format=iife --target=es2020 --outfile=vendor/policy.bundle.js",
+    "build": "npm run build:db && npm run build:culture && npm run build:policy"
+  }
+}

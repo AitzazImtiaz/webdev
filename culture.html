@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Netflix, SK Broadband and five years of argument over who pays for the traffic a hit show generates.">
+  <title>Culture — A History of the Internet in South Korea</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/banner.css">
+  <link rel="stylesheet" href="assets/css/graph.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="icon" href="assets/img/fav/favicon.ico" sizes="32x32">
+  <link rel="icon" href="assets/img/fav/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/fav/apple-touch-icon.png">
+  <style>
+    .scrolly { position: relative; display: grid; grid-template-columns: minmax(0,1fr) 340px; gap: 0 56px; }
+    .scrolly-fig { position: sticky; top: calc(var(--bar-h) + 24px); height: fit-content; }
+    #cu-chart { width: 100%; height: auto; display: block; }
+    .cu-grid { stroke: rgba(36,56,44,.14); stroke-width: 1; }
+    .cu-ylab, .cu-xlab { font-family: var(--mono); font-size: 10px; fill: rgba(var(--ink-rgb), .5); }
+    .cu-line { fill: none; stroke: #9b2242; stroke-width: 2; transition: stroke-dashoffset .6s ease; }
+    .cu-dot { fill: #9b2242; transition: r .4s ease; }
+    .cu-dotlab { font-family: var(--mono); font-size: 11px; fill: #9b2242; transition: opacity .4s ease; }
+    .cu-mark { stroke: rgba(36,56,44,.16); stroke-width: 1; transition: stroke .3s ease; }
+    .cu-mark.is-on { stroke: #24382c; stroke-width: 1.5; }
+    .cu-marklab { font-family: var(--mono); font-size: 9px; fill: transparent; transition: fill .3s ease; }
+    .cu-marklab.is-on { fill: #24382c; }
+    .cu-steps { padding-top: 30vh; padding-bottom: 40vh; }
+    .cu-step { margin-bottom: 60vh; opacity: .35; transition: opacity .3s ease; }
+    .cu-step.is-on { opacity: 1; }
+    .cu-step h3 { margin: 0 0 4px; font-family: var(--text); font-size: 21px; font-weight: 500; }
+    .cu-step .when { margin: 0 0 8px; font-family: var(--mono); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: rgba(var(--ink-rgb), .5); }
+    .cu-step p { margin: 0; font-size: 14px; line-height: 1.65; }
+    #cu-error { margin: 0 0 16px; padding: 14px 16px; border-left: 3px solid var(--hanbok); background: rgba(155,34,66,.06); font-size: 13px; }
+    @media (max-width: 860px) {
+      .scrolly { grid-template-columns: 1fr; }
+      .scrolly-fig { position: sticky; top: calc(var(--bar-h) + 8px); background: var(--paper); padding: 8px 0; z-index: 1; }
+      .cu-steps { padding-top: 4vh; }
+      .cu-step { margin-bottom: 50vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <noscript>
+    <p class="noscript">This page needs JavaScript. Turn it on to continue.</p>
+  </noscript>
+
+  <main id="app" tabindex="-1">
+
+    <header class="hero">
+      <img class="hero-img" src="assets/img/header.jpg"
+           alt="Two people standing together in a buckwheat field at dusk, hills behind.">
+      <div class="hero-text">
+        <div class="hero-inner">
+          <p class="kicker">온라인 문화</p>
+          <h1>Who Pays for a Hit Show?</h1>
+          <p class="sub">Five years, twenty four times more traffic, and a confusing question.</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="topbar" aria-label="Sections">
+      <ul>
+        <li><a href="index.html"><span class="en">Overview</span><span class="ko" lang="ko">개요</span></a></li>
+        <li><a href="timeline.html"><span class="en">Timeline</span><span class="ko" lang="ko">연표</span></a></li>
+        <li><a href="network.html"><span class="en">Network</span><span class="ko" lang="ko">인프라</span></a></li>
+        <li><a href="pcbang.html"><span class="en">PC Bang</span><span class="ko" lang="ko">PC방</span></a></li>
+        <li><a href="culture.html" aria-current="page"><span class="en">Culture</span><span class="ko" lang="ko">문화</span></a></li>
+        <li><a href="policy.html"><span class="en">Policy</span><span class="ko" lang="ko">정책</span></a></li>
+        <li><a href="references.html"><span class="en">References</span><span class="ko" lang="ko">참고문헌</span></a></li>
+      </ul>
+    </nav>
+
+    <article id="main" tabindex="-1">
+
+      <section class="band" aria-labelledby="cu-h">
+        <h2 id="cu-h">The Netflix Dilemna</h2>
+
+        <div class="band-main prose">
+          <p>By now, we established the earlier widespread of Korean network coverage; but as discussed
+            a problem before, nobody had realize who pays for traffic costs when whole world starts watching.
+            Scroll through for this case study!
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">A note on the line!</h3>
+          <p>By May 2018 and September 2021, only two traffic measurements were made public across the dispute
+            we will explore. Line between them is drawn dashed because of interpolation and not data. The dots can 
+            be considered as measurements.
+          </p>
+        </aside>
+      </section>
+
+      <div id="cu-error" role="alert" hidden></div>
+
+      <section class="scrolly" aria-label="The Netflix and SK Broadband dispute">
+        <div class="scrolly-fig">
+          <svg id="cu-chart"></svg>
+        </div>
+
+        <div class="cu-steps">
+          <div class="cu-step" data-step="arrive">
+            <p class="when">January 2016</p>
+            <h3>Netflix arrives</h3>
+            <p>Foreign streaming arrives on Korean network after it spent a decade building capacity handling; Netflix became 
+              first company to become a user of it.
+            </p>
+          </div>
+
+          <div class="cu-step" data-step="fifty">
+            <p class="when">May 2018</p>
+            <h3>50 Gbps</h3>
+            <p>SK Broadband puts Netflix on its network at 50 GiB per seconds. It was remarkable at that time. <cite data-ref="koreaherald-netflix-2023"></cite></p>
+          </div>
+
+          <div class="cu-step" data-step="sue">
+            <p class="when">April 2020</p>
+            <h3>Netflix sues first</h3>
+            <p>Netflix files a case to Seoul court for confirmation that it has no obligation to pay network usage fees with the argument caucus of net neutrality: subscibers 
+              sufficiently pay for their broadband, and so the premise of charging content creator is double billing. <cite data-ref="kedglobal-netflix-2023"></cite>
+            </p>
+          </div>
+
+          <div class="cu-step" data-step="ruling">
+            <p class="when">June 2021</p>
+            <h3>Court disagrees</h3>
+            <p>Seoul Central District Court provides ruling in favour for SK broadband, finding out in its verdict that it is reasonable for Netflix to provide something in 
+              return for service. Netflix provides a plea month later, warning that this ruling could topple global internet ecosystem.<cite data-ref="kedglobal-netflix-2023"></cite> 
+            </p>
+          </div>
+
+          <div class="cu-step" data-step="twelve">
+            <p class="when">September 2021</p>
+            <h3>1,200 Gbps</h3>
+            <p>Twenty four times the hike compared to 2018 figure, <em>Squid Game</em> first season launched the same month. SK Broadband files counterclaim seeking roughly 23 million dollars
+            a year. <cite data-ref="techcrunch-skb-2021"></cite></p>
+          </div>
+
+          <div class="cu-step" data-step="share">
+            <p class="when">2022</p>
+            <h3>Seven percent of everything</h3>
+            <p>By first round of litigation, Netflix accounted for atleast 7% of South Korean internet traffic, as per figure from Korea Information Society Development Institute. The disputed sum 
+              for single year was 27.2 billion won. <cite data-ref="bloomberg-netflix-2023"></cite>
+            </p>
+          </div>
+
+          <div class="cu-step" data-step="settle">
+            <p class="when">September 2023</p>
+            <h3>Both sides walk away mutually</h3>
+            <p>Following five years, SK Broadband and Netflix dropped every claim and announced partnership, bundling Netflix with SK Telecom plans. SK Broadband however had the position that network usage fees 
+              still remain unchanged. <cite data-ref="koreaherald-netflix-2023"></cite>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="why-h">
+        <h2 id="why-h">Why it mattered beyond Korea</h2>
+
+        <div class="band-main prose">
+          <p>This case was watched nationwide because it was first time a court told a content creator to pay an access 
+            network. Similar cases followed in Indonesia, Thailand, Brazil, the United States and the Carribean. <cite data-ref="bloomberg-netflix-2023"></cite> 
+            Eight seperate bills because of this network usage fees reached Korean National Assembly. <cite data-ref="kedglobal-netflix-2023"></cite>
+          </p>
+
+          <p>This ended without an answer per se. With settlement withdrawl, claims got replaced with commerical parternship, which albeit is a resolution for two 
+            companies but not a general consensun. Everyone in legal sector watching for precedent got to see a deal instead.
+          </p>
+
+          <p>Korean network made this collision sharp, three operators owning almost entire network cables, and so, a content provider negotiating access is negotiating an 
+            almost monopoly than a market. That structure was described as a premise in <a href="network.html">Network</a> page and is the reason this argument surfaced when talking 
+            about the culture. 
+          </p>
+        </div>
+
+        <aside class="band-side">
+          <h3 class="side-h">Figures</h3>
+          <dl class="scope">
+            <dt>Traffic growth</dt>
+            <dd>50 --> 1,200 Gbps from May 2018 to September 2021</dd>
+            <dt>Share of national traffic</dt>
+            <dd>At least 7% as per KISDI</dd>
+            <dt>Disputed sum</dt>
+            <dd>₩27.2 billion for one year</dd>
+            <dt>Duration</dt>
+            <dd>Five years with no ruling on the principle</dd>
+          </dl>
+        </aside>
+      </section>
+
+    </article>
+
+  </main>
+
+  <footer class="sitefoot">
+
+    <div class="foot-grid">
+
+      <div class="foot-col">
+        <p class="foot-title">A History of the Internet in South Korea</p>
+        <p class="foot-note">Twenty years of Korean network history from
+          7 October 2006 to the present.</p>
+      </div>
+
+      <div class="foot-col">
+        <h2>Sources on this page</h2>
+        <ol class="cites" id="page-cites">
+          <li>Sources to follow.</li>
+        </ol>
+        <p class="foot-note"><a href="references.html">Full reference list</a></p>
+      </div>
+
+    </div>
+
+    <div class="foot-base">
+      <p>CM1040 Web Development · University of London · Media credited on the references page.</p>
+      <p><a href="#app">Back to top</a></p>
+    </div>
+
+  </footer>
+
+  <script src="vendor/mustache.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/refs.js"></script>
+  <script src="vendor/culture.bundle.js"></script>
+  <script src="assets/js/nav.js" defer></script>
+</body>
+</html>

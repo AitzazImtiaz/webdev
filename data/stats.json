@@ -1,0 +1,32 @@
+{
+  "asOf": 2026,
+  "stats": [
+    {
+      "label": "Households with broadband",
+      "now": "97.2%",
+      "nowNote": "of the population online, January 2024",
+      "then": "94.0%",
+      "thenNote": "of households, 2006 — highest in the OECD",
+      "refNow": "datareportal-2024",
+      "refThen": "abs-oecd-2006"
+    },
+    {
+      "label": "Median fixed download",
+      "now": "233 Mbps",
+      "nowNote": "median, end of 2025",
+      "then": "17.5 Mbps",
+      "thenNote": "average, Q4 2011 — earliest comparable series",
+      "refNow": "datareportal-2026",
+      "refThen": "akamai-2011"
+    },
+    {
+      "label": "Mobile subscriptions",
+      "now": "66.4 m",
+      "nowNote": "128% of the population, January 2024",
+      "then": "45.6 m",
+      "thenNote": "93% of the population, December 2008",
+      "refNow": "datareportal-2024",
+      "refThen": "kcc-2008"
+    }
+  ]
+}

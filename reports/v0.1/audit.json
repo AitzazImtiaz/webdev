@@ -1,0 +1,3178 @@
+{
+  "crawler": {
+    "command": "siteone-crawler --url=http://127.0.0.1:5500 --output-html-report=reports/0.1/audit.html --output-json-file=reports/0.1/audit.json --output-text-file=reports/0.1/audit.txt",
+    "executedAt": "2026-08-15 20:50:56",
+    "finalUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/26.0.0.0 Safari/537.36 SiteOne-Crawler/2.5.1.20260627",
+    "hostname": "Aitzazs-MacBook-Air.local",
+    "name": "SiteOne Crawler",
+    "version": "2.5.1.20260627"
+  },
+  "extraColumnsFromAnalysis": [
+    {
+      "customGroup": null,
+      "customMethod": null,
+      "customPattern": null,
+      "length": 8,
+      "name": "Access.",
+      "truncate": false
+    },
+    {
+      "customGroup": null,
+      "customMethod": null,
+      "customPattern": null,
+      "length": 8,
+      "name": "Best pr.",
+      "truncate": false
+    }
+  ],
+  "options": {
+    "acceptEncoding": "gzip, deflate, br",
+    "acceptInvalidCerts": false,
+    "addHostToOutputFile": false,
+    "addRandomQueryParams": false,
+    "addTimestampToOutputFile": false,
+    "aiActions": [
+      "seo",
+      "typos",
+      "summary"
+    ],
+    "aiApiKey": null,
+    "aiApiKeyEnv": null,
+    "aiApiKeyFile": null,
+    "aiCacheDir": "/Users/aitzaz/Downloads/webdev/tmp/ai-cache",
+    "aiDryRun": false,
+    "aiEndpoint": null,
+    "aiExclude": [],
+    "aiExtraBody": null,
+    "aiInclude": [],
+    "aiLanguage": null,
+    "aiMaxConcurrency": 4,
+    "aiMaxPages": 100,
+    "aiMaxReqsPerSec": null,
+    "aiMaxTokens": 32000,
+    "aiModel": null,
+    "aiPrompt": null,
+    "aiPromptFile": null,
+    "aiProvider": "openai-compatible",
+    "aiSeoAffectsScore": false,
+    "aiSynthesisExtraBody": null,
+    "aiTemperature": 0.0,
+    "aiTimeout": 180,
+    "aiUseMaxCompletionTokens": false,
+    "allowedDomainsForCrawling": [],
+    "allowedDomainsForExternalFiles": [],
+    "analyzerFilterRegex": null,
+    "browserAutoDownload": false,
+    "browserHeadful": false,
+    "browserNoSandbox": false,
+    "browserPath": null,
+    "browserRenderAll": false,
+    "browserTimeout": 30,
+    "browserWait": "networkidle",
+    "browserWaitExtraMs": 0,
+    "browserWorkers": 3,
+    "ci": false,
+    "ciBaseline": null,
+    "ciFailOnCode": [],
+    "ciGithubAnnotations": false,
+    "ciIgnoreCode": [],
+    "ciJunitFile": null,
+    "ciMax404": 0,
+    "ciMax5xx": 0,
+    "ciMaxAvgResponse": null,
+    "ciMaxCriticals": 0,
+    "ciMaxScoreDrop": null,
+    "ciMaxWarnings": null,
+    "ciMinAccessibility": 3.0,
+    "ciMinAssets": 10,
+    "ciMinBestPractices": 5.0,
+    "ciMinDocuments": 0,
+    "ciMinPages": 10,
+    "ciMinPerformance": 5.0,
+    "ciMinScore": 5.0,
+    "ciMinSecurity": 5.0,
+    "ciMinSeo": 5.0,
+    "consoleMaxMessages": 100,
+    "consoleMsgMaxChars": 200,
+    "consoleTotalMaxKb": 128,
+    "consoleWidth": null,
+    "debug": false,
+    "debugLogFile": null,
+    "debugUrlRegex": [],
+    "device": "desktop",
+    "disableAllAssets": false,
+    "disableAstroInlineModules": false,
+    "disableFiles": false,
+    "disableFonts": false,
+    "disableImages": false,
+    "disableJavascript": false,
+    "disableStyles": false,
+    "doNotTruncateUrl": false,
+    "extraColumns": [],
+    "extraColumnsNamesOnly": [],
+    "fastestMaxTime": 1.0,
+    "fastestTopLimit": 20,
+    "forceColor": false,
+    "forceRelativeUrls": false,
+    "hideColumns": [],
+    "hideProgressBar": false,
+    "htmlReportOptions": null,
+    "htmlToMarkdownFile": null,
+    "htmlToMarkdownOutput": null,
+    "httpAuth": null,
+    "httpCacheCompression": false,
+    "httpCacheDir": "/Users/aitzaz/Library/Caches/siteone-crawler/http-cache",
+    "httpCacheTtl": 86400,
+    "ignoreHtmlComments": false,
+    "ignoreRegex": [],
+    "ignoreRobotsTxt": false,
+    "ignoreStoreFileError": false,
+    "includeRegex": [],
+    "keepQueryParams": [],
+    "mailFrom": "siteone-crawler@your-hostname.com",
+    "mailFromName": "SiteOne Crawler",
+    "mailSmtpHost": "localhost",
+    "mailSmtpPass": null,
+    "mailSmtpPort": 25,
+    "mailSmtpUser": null,
+    "mailSubjectTemplate": "Crawler Report for %domain% (%date%)",
+    "mailTo": [],
+    "markdownDisableFiles": false,
+    "markdownDisableImages": false,
+    "markdownExcludeSelector": [],
+    "markdownExportDir": null,
+    "markdownExportSingleFile": null,
+    "markdownExportStoreOnlyUrlRegex": [],
+    "markdownIgnoreStoreFileError": false,
+    "markdownMoveContentBeforeH1ToEnd": false,
+    "markdownRemoveLinksAndImagesFromSingleFile": false,
+    "markdownReplaceContent": [],
+    "markdownReplaceQueryString": [],
+    "maxDepth": 0,
+    "maxHeadingLevel": 3,
+    "maxNon200ResponsesPerBasename": 5,
+    "maxQueueLength": 9000,
+    "maxReqsPerSec": 10.0,
+    "maxSkippedUrls": 10000,
+    "maxUrlLength": 2083,
+    "maxVisitedUrls": 10000,
+    "memoryLimit": "2048M",
+    "noColor": false,
+    "offlineExportDir": null,
+    "offlineExportLowercase": false,
+    "offlineExportNoAutoRedirectHtml": false,
+    "offlineExportNoUrlRewriting": false,
+    "offlineExportPreserveUrlStructure": false,
+    "offlineExportPreserveUrls": false,
+    "offlineExportRemoveUnwantedCode": true,
+    "offlineExportStoreOnlyUrlRegex": [],
+    "outputHtmlReport": "/Users/aitzaz/Downloads/webdev/reports/0.1/audit.html",
+    "outputJsonFile": "/Users/aitzaz/Downloads/webdev/reports/0.1/audit.json",
+    "outputTextFile": "/Users/aitzaz/Downloads/webdev/reports/0.1/audit.txt",
+    "outputType": "text",
+    "proxy": null,
+    "regexFilteringOnlyForPages": false,
+    "removeAllAnchorListeners": false,
+    "removeQueryParams": false,
+    "replaceContent": [],
+    "replaceQueryString": [],
+    "resolve": [],
+    "resultStorage": "memory",
+    "resultStorageCompression": false,
+    "resultStorageDir": "/Users/aitzaz/Downloads/webdev/tmp/result-storage",
+    "rowsLimit": 200,
+    "screenshotFormat": "png",
+    "screenshotMode": "viewport",
+    "screenshotQuality": 80,
+    "screenshotViewport": "1920x1080",
+    "screenshots": false,
+    "screenshotsDir": null,
+    "serveBindAddress": "127.0.0.1",
+    "serveMarkdownDir": null,
+    "serveOfflineDir": null,
+    "servePort": 8321,
+    "showHelpOnly": false,
+    "showInlineCriticals": false,
+    "showInlineWarnings": false,
+    "showSchemeAndHost": false,
+    "showVersionOnly": false,
+    "singleForeignPage": false,
+    "singlePage": false,
+    "sitemapBasePriority": 0.5,
+    "sitemapPriorityIncrease": 0.1,
+    "sitemapTxtFile": null,
+    "sitemapXmlFile": null,
+    "slowestMaxTime": 3.0,
+    "slowestMinTime": 0.01,
+    "slowestTopLimit": 20,
+    "timeout": 5,
+    "timezone": null,
+    "transformUrl": [],
+    "uploadEnabled": false,
+    "uploadPassword": null,
+    "uploadRetention": "30d",
+    "uploadTimeout": 3600,
+    "uploadTo": "https://crawler.siteone.io/up",
+    "url": "http://127.0.0.1:5500",
+    "urlColumnSize": null,
+    "urlList": null,
+    "urlListUrls": [],
+    "userAgent": null,
+    "websocketServer": null,
+    "workers": 3
+  },
+  "qualityScores": {
+    "categories": [
+      {
+        "code": "performance",
+        "deductions": [],
+        "label": "Excellent",
+        "name": "Performance",
+        "score": 10.0,
+        "weight": 0.2
+      },
+      {
+        "code": "seo",
+        "deductions": [
+          {
+            "fix": "Keep a single <h1> per page; demote the others to <h2>/<h3>.",
+            "points": 0.4,
+            "reason": "2 page(s) with multiple <h1>"
+          },
+          {
+            "fix": "Give every page a unique, descriptive <title> (avoid reusing the same title across pages).",
+            "points": 0.3,
+            "reason": "Non-unique page titles detected"
+          },
+          {
+            "fix": "Write a unique meta description per page summarizing its content (~50-160 chars).",
+            "points": 0.3,
+            "reason": "Non-unique meta descriptions detected"
+          }
+        ],
+        "label": "Excellent",
+        "name": "SEO",
+        "score": 9.0,
+        "weight": 0.2
+      },
+      {
+        "code": "security",
+        "deductions": [
+          {
+            "fix": "Add the missing security headers (CSP, HSTS, X-Content-Type-Options) and harden cookies (Secure/HttpOnly/SameSite).",
+            "points": 2.5,
+            "reason": "8 page(s) with critical security findings"
+          }
+        ],
+        "label": "Good",
+        "name": "Security",
+        "score": 7.5,
+        "weight": 0.25
+      },
+      {
+        "code": "accessibility",
+        "deductions": [
+          {
+            "fix": "Associate every form control with a <label> (for=id or wrapping) or an aria-label.",
+            "points": 1.0,
+            "reason": "2 page(s) without form labels"
+          }
+        ],
+        "label": "Excellent",
+        "name": "Accessibility",
+        "score": 9.0,
+        "weight": 0.2
+      },
+      {
+        "code": "best-practices",
+        "deductions": [
+          {
+            "fix": "Enable Brotli (or at least gzip) compression for text assets on the server/CDN.",
+            "points": 0.5,
+            "reason": "No Brotli compression support"
+          },
+          {
+            "fix": "Serve images in a modern format (WebP or AVIF) for better compression.",
+            "points": 0.3,
+            "reason": "No WebP image support"
+          },
+          {
+            "fix": "Consider AVIF for the best image compression (alongside or instead of WebP).",
+            "points": 0.1,
+            "reason": "No AVIF image support"
+          }
+        ],
+        "label": "Excellent",
+        "name": "Best Practices",
+        "score": 9.1,
+        "weight": 0.15
+      }
+    ],
+    "overall": {
+      "code": "overall",
+      "deductions": [],
+      "label": "Good",
+      "name": "Overall",
+      "score": 8.8,
+      "weight": 1.0
+    }
+  },
+  "results": [
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.002,
+      "extras": [],
+      "size": 6745,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 4424,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/policy.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 11340,
+      "status": "200",
+      "type": 2,
+      "url": "http://127.0.0.1:5500/gate.js"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 2925,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/network.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.005,
+      "extras": [],
+      "size": 1419,
+      "status": "200",
+      "type": 4,
+      "url": "http://127.0.0.1:5500/favicon-32.png"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 5693,
+      "status": "200",
+      "type": 3,
+      "url": "http://127.0.0.1:5500/styles.css"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 7150,
+      "status": "200",
+      "type": 3,
+      "url": "http://127.0.0.1:5500/banner.css"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.009,
+      "extras": [],
+      "size": 1047156,
+      "status": "200",
+      "type": 4,
+      "url": "http://127.0.0.1:5500/header.jpg"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 2928,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/culture.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 599,
+      "status": "200",
+      "type": 2,
+      "url": "http://127.0.0.1:5500/nav.js"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 2919,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/timeline.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 2898,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/references.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 2930,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/pcbang.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.004,
+      "extras": [],
+      "size": 5252,
+      "status": "200",
+      "type": 1,
+      "url": "http://127.0.0.1:5500/index.html"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 6672,
+      "status": "200",
+      "type": 4,
+      "url": "http://127.0.0.1:5500/favicon.ico"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.006,
+      "extras": [],
+      "size": 9573,
+      "status": "200",
+      "type": 4,
+      "url": "http://127.0.0.1:5500/apple-touch-icon.png"
+    },
+    {
+      "cacheLifetime": 0,
+      "cacheTypeFlags": 285,
+      "elapsedTime": 0.008,
+      "extras": [],
+      "size": 525386,
+      "status": "200",
+      "type": 4,
+      "url": "http://127.0.0.1:5500/background.png"
+    }
+  ],
+  "stats": {
+    "countByStatus": {
+      "200": 17
+    },
+    "totalExecutionTime": 3.36,
+    "totalRequestsTimes": 0.096,
+    "totalRequestsTimesAvg": 0.006,
+    "totalRequestsTimesMax": 0.009,
+    "totalRequestsTimesMin": 0.002,
+    "totalRequestsTimesP90": 0.006,
+    "totalSize": 1646009,
+    "totalSizeFormatted": "2 MB",
+    "totalUrls": 17
+  },
+  "summary": {
+    "items": [
+      {
+        "aplCode": "pages-with-multiple-h1",
+        "status": "CRITICAL",
+        "text": "2 page(s) with multiple <h1> headings"
+      },
+      {
+        "aplCode": "dns",
+        "status": "CRITICAL",
+        "text": "Problem with DNS analysis: Failed to create DNS resolver: protocol error: failed to parse nameserver address: invalid IP address syntax"
+      },
+      {
+        "aplCode": "security",
+        "status": "CRITICAL",
+        "text": "Security - 8 pages(s) with critical finding(s)."
+      },
+      {
+        "aplCode": "title-uniqueness",
+        "status": "WARNING",
+        "text": "The title 'Overview — A History of the Internet in South Korea' exceeds the allowed 10% duplicity. 25% of pages have this same title."
+      },
+      {
+        "aplCode": "meta-description-uniqueness",
+        "status": "WARNING",
+        "text": "The description '' exceeds the allowed 10% duplicity. 100% of pages have this same description."
+      },
+      {
+        "aplCode": "brotli-support",
+        "status": "WARNING",
+        "text": "8 page(s) do not support Brotli compression."
+      },
+      {
+        "aplCode": "webp-support",
+        "status": "WARNING",
+        "text": "No WebP image found on the website."
+      },
+      {
+        "aplCode": "avif-support",
+        "status": "WARNING",
+        "text": "No AVIF image found on the website."
+      },
+      {
+        "aplCode": "pages-without-form-labels",
+        "status": "WARNING",
+        "text": "2 page(s) without form labels"
+      },
+      {
+        "aplCode": "robots-txt-127.0.0.1",
+        "status": "NOTICE",
+        "text": "Loaded robots.txt for domain '127.0.0.1': status code 404, size 149 B and took 4 ms."
+      },
+      {
+        "aplCode": "ssl-tls-analyzer",
+        "status": "NOTICE",
+        "text": "SSL/TLS not supported, analyzer skipped."
+      },
+      {
+        "aplCode": "seo-meta-description-missing",
+        "status": "NOTICE",
+        "text": "8 page(s) without a meta description"
+      },
+      {
+        "aplCode": "seo-canonical-missing",
+        "status": "NOTICE",
+        "text": "8 page(s) without a rel=canonical link"
+      },
+      {
+        "aplCode": "static-assets-short-cache",
+        "status": "NOTICE",
+        "text": "9 static asset(s) use a short or revalidate-only cache policy (< 1 day)"
+      },
+      {
+        "aplCode": "skipped",
+        "status": "OK",
+        "text": "Skipped URLs - no skipped URLs found"
+      },
+      {
+        "aplCode": "external-urls",
+        "status": "OK",
+        "text": "External URLs - no external URLs found"
+      },
+      {
+        "aplCode": "redirects",
+        "status": "OK",
+        "text": "Redirects - no redirects found"
+      },
+      {
+        "aplCode": "404",
+        "status": "OK",
+        "text": "404 OK - all pages exists, no non-existent pages found"
+      },
+      {
+        "aplCode": "slowUrls",
+        "status": "OK",
+        "text": "Performance OK - all non-media URLs are faster than 3 seconds"
+      },
+      {
+        "aplCode": "seo-title-missing",
+        "status": "OK",
+        "text": "All indexable pages have a <title>"
+      },
+      {
+        "aplCode": "unique-headers",
+        "status": "OK",
+        "text": "HTTP headers - found 8 unique headers"
+      },
+      {
+        "aplCode": "static-assets-uncacheable",
+        "status": "OK",
+        "text": "All static assets are cacheable"
+      },
+      {
+        "aplCode": "pages-with-missing-quotes",
+        "status": "OK",
+        "text": "All pages have quoted attributes"
+      },
+      {
+        "aplCode": "pages-with-large-svgs",
+        "status": "OK",
+        "text": "All pages have inline SVGs smaller than 5120 bytes"
+      },
+      {
+        "aplCode": "pages-with-duplicated-svgs",
+        "status": "OK",
+        "text": "All pages have inline SVGs with less than 5 duplicates"
+      },
+      {
+        "aplCode": "pages-with-invalid-svgs",
+        "status": "OK",
+        "text": "All pages have valid or none inline SVGs"
+      },
+      {
+        "aplCode": "pages-without-h1",
+        "status": "OK",
+        "text": "All pages have <h1> heading"
+      },
+      {
+        "aplCode": "pages-with-skipped-heading-levels",
+        "status": "OK",
+        "text": "All pages have heading structure without skipped levels"
+      },
+      {
+        "aplCode": "pages-with-deep-dom",
+        "status": "OK",
+        "text": "All pages have DOM depth less than 30"
+      },
+      {
+        "aplCode": "pages-with-non-clickable-phone-numbers",
+        "status": "OK",
+        "text": "All pages have clickable (interactive) phone numbers"
+      },
+      {
+        "aplCode": "pages-with-invalid-html",
+        "status": "OK",
+        "text": "No HTML structural issues found"
+      },
+      {
+        "aplCode": "pages-without-image-alt-attributes",
+        "status": "OK",
+        "text": "All pages have image alt attributes"
+      },
+      {
+        "aplCode": "pages-without-aria-labels",
+        "status": "OK",
+        "text": "All links/buttons have an accessible name"
+      },
+      {
+        "aplCode": "pages-without-main-landmark",
+        "status": "OK",
+        "text": "All pages expose a main landmark"
+      },
+      {
+        "aplCode": "pages-without-lang",
+        "status": "OK",
+        "text": "All pages have lang attribute"
+      },
+      {
+        "aplCode": "pages-weight-exceeded",
+        "status": "OK",
+        "text": "All pages are within the page-weight budget"
+      },
+      {
+        "aplCode": "export-to-html",
+        "status": "INFO",
+        "text": "HTML report saved to '/Users/aitzaz/Downloads/webdev/reports/0.1/audit.html' and took 0 ms"
+      }
+    ]
+  },
+  "tables": {
+    "404": {
+      "aplCode": "404",
+      "columns": {
+        "sourceUqId": {
+          "aplCode": "sourceUqId",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Found at URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 52
+        },
+        "statusCode": {
+          "aplCode": "statusCode",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "URL 404",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 52
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "404 URLs"
+    },
+    "accessibility": {
+      "aplCode": "accessibility",
+      "columns": {
+        "analysisName": {
+          "aplCode": "analysisName",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Analysis name",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "critical": {
+          "aplCode": "critical",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Critical",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 8
+        },
+        "notice": {
+          "aplCode": "notice",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Notice",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "ok": {
+          "aplCode": "ok",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "OK",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "warning": {
+          "aplCode": "warning",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Warning",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 7
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "analysisName": "Unnamed links/buttons",
+          "critical": "0",
+          "notice": "0",
+          "ok": "4",
+          "warning": "0"
+        },
+        {
+          "analysisName": "Missing main landmark",
+          "critical": "0",
+          "notice": "0",
+          "ok": "1",
+          "warning": "0"
+        },
+        {
+          "analysisName": "Missing form labels",
+          "critical": "0",
+          "notice": "0",
+          "ok": "1",
+          "warning": "1"
+        },
+        {
+          "analysisName": "Missing html lang attribute",
+          "critical": "0",
+          "notice": "0",
+          "ok": "1",
+          "warning": "0"
+        },
+        {
+          "analysisName": "Missing image alt attributes",
+          "critical": "0",
+          "notice": "0",
+          "ok": "1",
+          "warning": "0"
+        },
+        {
+          "analysisName": "HTML structural issues",
+          "critical": "0",
+          "notice": "0",
+          "ok": "8",
+          "warning": "0"
+        }
+      ],
+      "title": "Accessibility"
+    },
+    "analysis-stats": {
+      "aplCode": "analysis-stats",
+      "columns": {
+        "classAndMethod": {
+          "aplCode": "classAndMethod",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Class::method",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "execCount": {
+          "aplCode": "execCount",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Exec count",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "execTime": {
+          "aplCode": "execTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Exec time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 9
+        }
+      },
+      "position": "after-url-table",
+      "rows": [
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkNonClickablePhoneNumbers",
+          "execCount": "8",
+          "execTime": "0.0023750409999999996",
+          "execTimeFormatted": "2 ms"
+        },
+        {
+          "classAndMethod": "SeoAndOpenGraphAnalyzer::analyzeHeadings",
+          "execCount": "1",
+          "execTime": "0.001772125",
+          "execTimeFormatted": "1 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkHeadingStructure",
+          "execCount": "8",
+          "execTime": "0.0016679579999999998",
+          "execTimeFormatted": "1 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkMaxDOMDepth",
+          "execCount": "8",
+          "execTime": "0.001362917",
+          "execTimeFormatted": "1 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkMissingQuotesOnAttributes",
+          "execCount": "8",
+          "execTime": "0.000392083",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkMissingAriaLabels",
+          "execCount": "8",
+          "execTime": "0.000302418",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkImageAltAttributes",
+          "execCount": "8",
+          "execTime": "0.000289584",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkHtmlStructure",
+          "execCount": "8",
+          "execTime": "0.000265624",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkMissingLabels",
+          "execCount": "8",
+          "execTime": "0.000244624",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SecurityAnalyzer::checkHeaders",
+          "execCount": "8",
+          "execTime": "0.00020295800000000002",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkInlineSvg",
+          "execCount": "8",
+          "execTime": "0.00017837299999999998",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SeoAndOpenGraphAnalyzer::analyzeSeo",
+          "execCount": "1",
+          "execTime": "0.000165708",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkTitleUniqueness",
+          "execCount": "1",
+          "execTime": "0.000034916",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkMissingLang",
+          "execCount": "8",
+          "execTime": "0.000032584",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AccessibilityAnalyzer::checkMissingRoles",
+          "execCount": "8",
+          "execTime": "0.000032501",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkMetaDescriptionUniqueness",
+          "execCount": "1",
+          "execTime": "0.000024375",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SeoAndOpenGraphAnalyzer::analyzeOpenGraph",
+          "execCount": "1",
+          "execTime": "0.000018667",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SeoAndOpenGraphAnalyzer::emitSeoQualityFindings",
+          "execCount": "1",
+          "execTime": "0.000007333",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkBrotliSupport",
+          "execCount": "1",
+          "execTime": "0.000002125",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkWebpSupport",
+          "execCount": "1",
+          "execTime": "0.000001666",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "BestPracticeAnalyzer::checkAvifSupport",
+          "execCount": "1",
+          "execTime": "0.000001",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SecurityAnalyzer::checkHtmlSecurity",
+          "execCount": "8",
+          "execTime": "0.000000332",
+          "execTimeFormatted": "0 ms"
+        }
+      ],
+      "title": "Analysis stats"
+    },
+    "best-practices": {
+      "aplCode": "best-practices",
+      "columns": {
+        "analysisName": {
+          "aplCode": "analysisName",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Analysis name",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "critical": {
+          "aplCode": "critical",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Critical",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 8
+        },
+        "notice": {
+          "aplCode": "notice",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Notice",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "ok": {
+          "aplCode": "ok",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "OK",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "warning": {
+          "aplCode": "warning",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Warning",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 7
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "analysisName": "Heading structure",
+          "critical": "2",
+          "notice": "0",
+          "ok": "14",
+          "warning": "0"
+        },
+        {
+          "analysisName": "DOM depth",
+          "critical": "0",
+          "notice": "0",
+          "ok": "8",
+          "warning": "0"
+        },
+        {
+          "analysisName": "Title uniqueness",
+          "critical": "0",
+          "notice": "0",
+          "ok": "6",
+          "warning": "1"
+        },
+        {
+          "analysisName": "Description uniqueness",
+          "critical": "0",
+          "notice": "0",
+          "ok": "0",
+          "warning": "1"
+        },
+        {
+          "analysisName": "Brotli support",
+          "critical": "0",
+          "notice": "0",
+          "ok": "0",
+          "warning": "8"
+        },
+        {
+          "analysisName": "WebP support",
+          "critical": "0",
+          "notice": "0",
+          "ok": "0",
+          "warning": "1"
+        },
+        {
+          "analysisName": "AVIF support",
+          "critical": "0",
+          "notice": "0",
+          "ok": "0",
+          "warning": "1"
+        }
+      ],
+      "title": "Best practices"
+    },
+    "caching-per-content-type": {
+      "aplCode": "caching-per-content-type",
+      "columns": {
+        "avgLifetime": {
+          "aplCode": "avgLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "AVG lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "cacheType": {
+          "aplCode": "cacheType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Cache type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "contentType": {
+          "aplCode": "contentType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Content type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "maxLifetime": {
+          "aplCode": "maxLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MAX lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "minLifetime": {
+          "aplCode": "minLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MIN lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "HTML",
+          "count": "8",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "Image",
+          "count": "5",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "JS",
+          "count": "2",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "CSS",
+          "count": "2",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        }
+      ],
+      "title": "HTTP Caching by content type (only from crawlable domains)"
+    },
+    "caching-per-domain": {
+      "aplCode": "caching-per-domain",
+      "columns": {
+        "avgLifetime": {
+          "aplCode": "avgLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "AVG lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "cacheType": {
+          "aplCode": "cacheType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Cache type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "domain": {
+          "aplCode": "domain",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Domain",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 20
+        },
+        "maxLifetime": {
+          "aplCode": "maxLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MAX lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "minLifetime": {
+          "aplCode": "minLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MIN lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "count": "17",
+          "domain": "127.0.0.1",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        }
+      ],
+      "title": "HTTP Caching by domain"
+    },
+    "caching-per-domain-and-content-type": {
+      "aplCode": "caching-per-domain-and-content-type",
+      "columns": {
+        "avgLifetime": {
+          "aplCode": "avgLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "AVG lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "cacheType": {
+          "aplCode": "cacheType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Cache type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "contentType": {
+          "aplCode": "contentType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Content type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "domain": {
+          "aplCode": "domain",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Domain",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 20
+        },
+        "maxLifetime": {
+          "aplCode": "maxLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MAX lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "minLifetime": {
+          "aplCode": "minLifetime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "MIN lifetime",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "HTML",
+          "count": "8",
+          "domain": "127.0.0.1",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "Image",
+          "count": "5",
+          "domain": "127.0.0.1",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "JS",
+          "count": "2",
+          "domain": "127.0.0.1",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        },
+        {
+          "avgLifetime": "0",
+          "cacheType": "Cache-Control + ETag + Last-Modified",
+          "contentType": "CSS",
+          "count": "2",
+          "domain": "127.0.0.1",
+          "maxLifetime": "0",
+          "minLifetime": "0"
+        }
+      ],
+      "title": "HTTP Caching by domain and content type"
+    },
+    "content-processors-stats": {
+      "aplCode": "content-processors-stats",
+      "columns": {
+        "classAndMethod": {
+          "aplCode": "classAndMethod",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Class::method",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "execCount": {
+          "aplCode": "execCount",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Exec count",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "execTime": {
+          "aplCode": "execTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Exec time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 9
+        }
+      },
+      "position": "after-url-table",
+      "rows": [
+        {
+          "classAndMethod": "HtmlProcessor::findUrls",
+          "execCount": "8",
+          "execTime": "0.010026003000000002",
+          "execTimeFormatted": "10 ms"
+        },
+        {
+          "classAndMethod": "JavaScriptProcessor::findUrls",
+          "execCount": "10",
+          "execTime": "0.0018351659999999998",
+          "execTimeFormatted": "1 ms"
+        },
+        {
+          "classAndMethod": "CssProcessor::findUrls",
+          "execCount": "10",
+          "execTime": "0.001614002",
+          "execTimeFormatted": "1 ms"
+        },
+        {
+          "classAndMethod": "NextJsProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "12",
+          "execTime": "0.00023500099999999998",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AstroProcessor::findUrls",
+          "execCount": "10",
+          "execTime": "0.000034126",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "NextJsProcessor::findUrls",
+          "execCount": "12",
+          "execTime": "0.000020747999999999995",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "AstroProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "10",
+          "execTime": "0.000002458",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "JavaScriptProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "10",
+          "execTime": "0.0000019579999999999997",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "CssProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "10",
+          "execTime": "0.000000541",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SvelteProcessor::findUrls",
+          "execCount": "8",
+          "execTime": "0.000000458",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "SvelteProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "8",
+          "execTime": "0.00000037499999999999996",
+          "execTimeFormatted": "0 ms"
+        },
+        {
+          "classAndMethod": "HtmlProcessor::applyContentChangesBeforeUrlParsing",
+          "execCount": "8",
+          "execTime": "0.000000292",
+          "execTimeFormatted": "0 ms"
+        }
+      ],
+      "title": "Content processor stats"
+    },
+    "content-types": {
+      "aplCode": "content-types",
+      "columns": {
+        "avgTime": {
+          "aplCode": "avgTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Avg time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 8
+        },
+        "contentType": {
+          "aplCode": "contentType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Content type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 12
+        },
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "status20x": {
+          "aplCode": "status20x",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status 20x",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "totalSize": {
+          "aplCode": "totalSize",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Total size",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "totalTime": {
+          "aplCode": "totalTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Total time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "avgTime": "0.0050",
+          "contentType": "HTML",
+          "count": "8",
+          "status20x": "8",
+          "totalSize": "31021",
+          "totalTime": "0.0398"
+        },
+        {
+          "avgTime": "0.0067",
+          "contentType": "Image",
+          "count": "5",
+          "status20x": "5",
+          "totalSize": "1590206",
+          "totalTime": "0.0337"
+        },
+        {
+          "avgTime": "0.0057",
+          "contentType": "JS",
+          "count": "2",
+          "status20x": "2",
+          "totalSize": "11939",
+          "totalTime": "0.0114"
+        },
+        {
+          "avgTime": "0.0056",
+          "contentType": "CSS",
+          "count": "2",
+          "status20x": "2",
+          "totalSize": "12843",
+          "totalTime": "0.0113"
+        }
+      ],
+      "title": "Content types"
+    },
+    "content-types-raw": {
+      "aplCode": "content-types-raw",
+      "columns": {
+        "avgTime": {
+          "aplCode": "avgTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Avg time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 8
+        },
+        "contentType": {
+          "aplCode": "contentType",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Content type",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 26
+        },
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "status20x": {
+          "aplCode": "status20x",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status 20x",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "totalSize": {
+          "aplCode": "totalSize",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Total size",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "totalTime": {
+          "aplCode": "totalTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Total time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "avgTime": "0.0050",
+          "contentType": "text/html; charset=UTF-8",
+          "count": "8",
+          "status20x": "8",
+          "totalSize": "31021",
+          "totalTime": "0.0398"
+        },
+        {
+          "avgTime": "0.0062",
+          "contentType": "image/png",
+          "count": "3",
+          "status20x": "3",
+          "totalSize": "536378",
+          "totalTime": "0.0187"
+        },
+        {
+          "avgTime": "0.0057",
+          "contentType": "application/javascript; charset=UTF-8",
+          "count": "2",
+          "status20x": "2",
+          "totalSize": "11939",
+          "totalTime": "0.0114"
+        },
+        {
+          "avgTime": "0.0056",
+          "contentType": "text/css; charset=UTF-8",
+          "count": "2",
+          "status20x": "2",
+          "totalSize": "12843",
+          "totalTime": "0.0113"
+        },
+        {
+          "avgTime": "0.0093",
+          "contentType": "image/jpeg",
+          "count": "1",
+          "status20x": "1",
+          "totalSize": "1047156",
+          "totalTime": "0.0093"
+        },
+        {
+          "avgTime": "0.0057",
+          "contentType": "image/x-icon",
+          "count": "1",
+          "status20x": "1",
+          "totalSize": "6672",
+          "totalTime": "0.0057"
+        }
+      ],
+      "title": "Content types (MIME types)"
+    },
+    "dns": {
+      "aplCode": "dns",
+      "columns": {
+        "info": {
+          "aplCode": "info",
+          "escapeOutputHtml": false,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "DNS resolving tree",
+          "nonBreakingSpaces": true,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 70
+        }
+      },
+      "position": "after-url-table",
+      "rows": [
+        {
+          "info": "Failed to create DNS resolver: protocol error: failed to parse nameserver address: invalid IP address syntax"
+        }
+      ],
+      "title": "DNS info"
+    },
+    "external-urls": {
+      "aplCode": "external-urls",
+      "columns": {
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Pages",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "foundOn": {
+          "aplCode": "foundOn",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Found on URL (max 5)",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 60
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "External URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 60
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "External URLs"
+    },
+    "fastest-urls": {
+      "aplCode": "fastest-urls",
+      "columns": {
+        "requestTime": {
+          "aplCode": "requestTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "statusCode": {
+          "aplCode": "statusCode",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Fast URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 100
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "requestTime": "0.0024",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/"
+        },
+        {
+          "requestTime": "0.0036",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/index.html"
+        },
+        {
+          "requestTime": "0.0055",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/pcbang.html"
+        },
+        {
+          "requestTime": "0.0056",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/timeline.html"
+        },
+        {
+          "requestTime": "0.0056",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/references.html"
+        },
+        {
+          "requestTime": "0.0057",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/network.html"
+        },
+        {
+          "requestTime": "0.0057",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/culture.html"
+        },
+        {
+          "requestTime": "0.0058",
+          "statusCode": "200",
+          "url": "http://127.0.0.1:5500/policy.html"
+        }
+      ],
+      "title": "TOP fastest URLs"
+    },
+    "headers": {
+      "aplCode": "headers",
+      "columns": {
+        "header": {
+          "aplCode": "header",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Header",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "maxValue": {
+          "aplCode": "maxValue",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Max value",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "minValue": {
+          "aplCode": "minValue",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Min value",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 10
+        },
+        "occurrences": {
+          "aplCode": "occurrences",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Occurs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "uniqueValues": {
+          "aplCode": "uniqueValues",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Unique",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "valuesPreview": {
+          "aplCode": "valuesPreview",
+          "escapeOutputHtml": false,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Values preview",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 30
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "header": "Accept-Ranges",
+          "maxValue": "",
+          "minValue": "",
+          "occurrences": "17",
+          "uniqueValues": "1",
+          "valuesPreview": "bytes"
+        },
+        {
+          "header": "Cache-Control",
+          "maxValue": "",
+          "minValue": "",
+          "occurrences": "17",
+          "uniqueValues": "1",
+          "valuesPreview": "public, max-age=0"
+        },
+        {
+          "header": "Connection",
+          "maxValue": "",
+          "minValue": "",
+          "occurrences": "17",
+          "uniqueValues": "1",
+          "valuesPreview": "close"
+        },
+        {
+          "header": "Content-Length",
+          "maxValue": "1023 kB",
+          "minValue": "599 B",
+          "occurrences": "17",
+          "uniqueValues": "-",
+          "valuesPreview": "[ignored generic values]"
+        },
+        {
+          "header": "Content-Type",
+          "maxValue": "",
+          "minValue": "",
+          "occurrences": "17",
+          "uniqueValues": "6",
+          "valuesPreview": "[see values below]"
+        },
+        {
+          "header": "Date",
+          "maxValue": "2026-08-15",
+          "minValue": "2026-08-15",
+          "occurrences": "17",
+          "uniqueValues": "-",
+          "valuesPreview": "[ignored generic values]"
+        },
+        {
+          "header": "Etag",
+          "maxValue": "",
+          "minValue": "",
+          "occurrences": "17",
+          "uniqueValues": "-",
+          "valuesPreview": "[ignored generic values]"
+        },
+        {
+          "header": "Last-Modified",
+          "maxValue": "2026-08-15",
+          "minValue": "2026-08-15",
+          "occurrences": "17",
+          "uniqueValues": "-",
+          "valuesPreview": "[ignored generic values]"
+        }
+      ],
+      "title": "HTTP headers"
+    },
+    "headers-values": {
+      "aplCode": "headers-values",
+      "columns": {
+        "header": {
+          "aplCode": "header",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Header",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "occurrences": {
+          "aplCode": "occurrences",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Occurs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "value": {
+          "aplCode": "value",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Value",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 64
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "header": "Accept-Ranges",
+          "occurrences": "17",
+          "value": "bytes"
+        },
+        {
+          "header": "Cache-Control",
+          "occurrences": "17",
+          "value": "public, max-age=0"
+        },
+        {
+          "header": "Connection",
+          "occurrences": "17",
+          "value": "close"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "8",
+          "value": "text/html; charset=UTF-8"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "3",
+          "value": "image/png"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "2",
+          "value": "application/javascript; charset=UTF-8"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "2",
+          "value": "text/css; charset=UTF-8"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "1",
+          "value": "image/x-icon"
+        },
+        {
+          "header": "Content-Type",
+          "occurrences": "1",
+          "value": "image/jpeg"
+        }
+      ],
+      "title": "HTTP header values"
+    },
+    "non-unique-descriptions": {
+      "aplCode": "non-unique-descriptions",
+      "columns": {
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Count",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "description": {
+          "aplCode": "description",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Description",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 110
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "count": "8",
+          "description": ""
+        }
+      ],
+      "title": "TOP non-unique descriptions"
+    },
+    "non-unique-titles": {
+      "aplCode": "non-unique-titles",
+      "columns": {
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Count",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "title": {
+          "aplCode": "title",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Title",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 110
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "count": "2",
+          "title": "Overview — A History of the Internet in South Korea"
+        }
+      ],
+      "title": "TOP non-unique titles"
+    },
+    "open-graph": {
+      "aplCode": "open-graph",
+      "columns": {
+        "urlPathAndQuery": {
+          "aplCode": "urlPathAndQuery",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 50
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "OpenGraph metadata"
+    },
+    "redirects": {
+      "aplCode": "redirects",
+      "columns": {
+        "sourceUqId": {
+          "aplCode": "sourceUqId",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Found at URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 33
+        },
+        "statusCode": {
+          "aplCode": "statusCode",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "targetUrl": {
+          "aplCode": "targetUrl",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Target URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 33
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Redirected URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 33
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "Redirected URLs"
+    },
+    "security": {
+      "aplCode": "security",
+      "columns": {
+        "critical": {
+          "aplCode": "critical",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Critical",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 8
+        },
+        "header": {
+          "aplCode": "header",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Header",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 26
+        },
+        "notice": {
+          "aplCode": "notice",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Notice",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "ok": {
+          "aplCode": "ok",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "OK",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "recommendation": {
+          "aplCode": "recommendation",
+          "escapeOutputHtml": false,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Recommendation",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 50
+        },
+        "warning": {
+          "aplCode": "warning",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Warning",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 7
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "critical": "8",
+          "header": "Content-Security-Policy",
+          "highestSeverity": "4",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "Content-Security-Policy header is not set. It restricts resources the page can load and prevents XSS attacks.",
+          "warning": "0"
+        },
+        {
+          "critical": "0",
+          "header": "X-Frame-Options",
+          "highestSeverity": "3",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "X-Frame-Options header is not set. It prevents clickjacking attacks when set to 'deny' or 'sameorigin.",
+          "warning": "8"
+        },
+        {
+          "critical": "0",
+          "header": "X-Content-Type-Options",
+          "highestSeverity": "3",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "X-Content-Type-Options header is not set. It stops MIME type sniffing and mitigates content type attacks.",
+          "warning": "8"
+        },
+        {
+          "critical": "0",
+          "header": "Referrer-Policy",
+          "highestSeverity": "3",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "Referrer-Policy header is not set. It controls referrer header sharing and enhances privacy and security.",
+          "warning": "8"
+        },
+        {
+          "critical": "0",
+          "header": "Feature-Policy",
+          "highestSeverity": "3",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "Feature-Policy header is not set. It allows enabling/disabling browser APIs and features for security. Not important if Permissions-Policy is set.",
+          "warning": "8"
+        },
+        {
+          "critical": "0",
+          "header": "Permissions-Policy",
+          "highestSeverity": "3",
+          "notice": "0",
+          "ok": "0",
+          "recommendation": "Permissions-Policy header is not set. It allows enabling/disabling browser APIs and features for security.",
+          "warning": "8"
+        },
+        {
+          "critical": "0",
+          "header": "Cross-Origin-Opener-Policy",
+          "highestSeverity": "2",
+          "notice": "8",
+          "ok": "0",
+          "recommendation": "Cross-Origin-Opener-Policy is not set. 'same-origin' isolates your browsing context from cross-origin popups (mitigates Spectre/XS-Leaks).",
+          "warning": "0"
+        },
+        {
+          "critical": "0",
+          "header": "Cross-Origin-Embedder-Policy",
+          "highestSeverity": "2",
+          "notice": "8",
+          "ok": "0",
+          "recommendation": "Cross-Origin-Embedder-Policy is not set. 'require-corp' enables cross-origin isolation for powerful features.",
+          "warning": "0"
+        },
+        {
+          "critical": "0",
+          "header": "Cross-Origin-Resource-Policy",
+          "highestSeverity": "2",
+          "notice": "8",
+          "ok": "0",
+          "recommendation": "Cross-Origin-Resource-Policy is not set. 'same-origin' or 'same-site' blocks other sites from embedding this resource.",
+          "warning": "0"
+        },
+        {
+          "critical": "0",
+          "header": "X-XSS-Protection",
+          "highestSeverity": "1",
+          "notice": "0",
+          "ok": "8",
+          "recommendation": "",
+          "warning": "0"
+        },
+        {
+          "critical": "0",
+          "header": "Server",
+          "highestSeverity": "1",
+          "notice": "0",
+          "ok": "8",
+          "recommendation": "Server header is not set or empty. This is recommended.",
+          "warning": "0"
+        }
+      ],
+      "title": "Security"
+    },
+    "seo": {
+      "aplCode": "seo",
+      "columns": {
+        "description": {
+          "aplCode": "description",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Description",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 10
+        },
+        "h1": {
+          "aplCode": "h1",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "H1",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 10
+        },
+        "indexing": {
+          "aplCode": "indexing",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Indexing",
+          "nonBreakingSpaces": false,
+          "renderer": {},
+          "truncateIfLonger": false,
+          "width": 20
+        },
+        "keywords": {
+          "aplCode": "keywords",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Keywords",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 10
+        },
+        "title": {
+          "aplCode": "title",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Title",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 10
+        },
+        "urlPathAndQuery": {
+          "aplCode": "urlPathAndQuery",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 50
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Solve this challenge!",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Overview — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Life on the Korean Web",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Culture — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/culture.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Solve this challenge!",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Overview — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/index.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Wires, Fibre and Air",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Network — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/network.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "The PC Bang After the Peak",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "PC Bang — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/pcbang.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Rules, Breaches and the Gap",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Policy — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/policy.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Sources and Credits",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "References — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/references.html"
+        },
+        {
+          "deniedByRobotsTxt": "false",
+          "description": "",
+          "h1": "Twenty Years, One Connection",
+          "indexing": "",
+          "keywords": "",
+          "robotsIndex": "1",
+          "title": "Timeline — A History of the Internet in South Korea",
+          "urlPathAndQuery": "/timeline.html"
+        }
+      ],
+      "title": "SEO metadata"
+    },
+    "seo-headings": {
+      "aplCode": "seo-headings",
+      "columns": {
+        "headings": {
+          "aplCode": "headings",
+          "escapeOutputHtml": false,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Heading structure",
+          "nonBreakingSpaces": false,
+          "renderer": {},
+          "truncateIfLonger": true,
+          "width": 66
+        },
+        "headingsCount": {
+          "aplCode": "headingsCount",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Count",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 5
+        },
+        "headingsErrorsCount": {
+          "aplCode": "headingsErrorsCount",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Errors",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "urlPathAndQuery": {
+          "aplCode": "urlPathAndQuery",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 30
+        }
+      },
+      "position": "before-url-table",
+      "rows": [
+        {
+          "headings": "<h1> Solve this challenge! <h1> A History of the Internet in South Korea <h2> A History of the Internet in South Korea <h2> Sources on this page",
+          "headingsCount": "4",
+          "headingsErrorsCount": "2",
+          "headingsHtml": "<ul><li><span class=\"help\" title=\"Multiple H1s (2) found.\"><span style=\"color: #ff00ff\">&lt;h1&gt; Solve this challenge!</span></span></li><li><span class=\"help\" title=\"Multiple H1s (2) found.\"><span style=\"color: #ff00ff\">&lt;h1&gt; A History of the Internet in South Korea</span></span><ul><li>&lt;h2&gt; A History of the Internet in South Korea</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/"
+        },
+        {
+          "headings": "<h1> Solve this challenge! <h1> A History of the Internet in South Korea <h2> A History of the Internet in South Korea <h2> Sources on this page",
+          "headingsCount": "4",
+          "headingsErrorsCount": "2",
+          "headingsHtml": "<ul><li><span class=\"help\" title=\"Multiple H1s (2) found.\"><span style=\"color: #ff00ff\">&lt;h1&gt; Solve this challenge!</span></span></li><li><span class=\"help\" title=\"Multiple H1s (2) found.\"><span style=\"color: #ff00ff\">&lt;h1&gt; A History of the Internet in South Korea</span></span><ul><li>&lt;h2&gt; A History of the Internet in South Korea</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/index.html"
+        },
+        {
+          "headings": "<h1> Rules, Breaches and the Gap <h2> Rules, Breaches and the Gap <h2> Sources on this page",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; Rules, Breaches and the Gap<ul><li>&lt;h2&gt; Rules, Breaches and the Gap</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/policy.html"
+        },
+        {
+          "headings": "<h1> Wires, Fibre and Air <h2> Wires, Fibre and Air <h2> Sources on this page",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; Wires, Fibre and Air<ul><li>&lt;h2&gt; Wires, Fibre and Air</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/network.html"
+        },
+        {
+          "headings": "<h1> Life on the Korean Web <h2> Life on the Korean Web <h2> Sources on this page",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; Life on the Korean Web<ul><li>&lt;h2&gt; Life on the Korean Web</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/culture.html"
+        },
+        {
+          "headings": "<h1> Twenty Years, One Connection <h2> Twenty Years, One Connection <h2> Sources on this page",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; Twenty Years, One Connection<ul><li>&lt;h2&gt; Twenty Years, One Connection</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/timeline.html"
+        },
+        {
+          "headings": "<h1> Sources and Credits <h2> Sources and Credits <h2> About the sources",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; Sources and Credits<ul><li>&lt;h2&gt; Sources and Credits</li><li>&lt;h2&gt; About the sources</li></ul></li></ul>",
+          "urlPathAndQuery": "/references.html"
+        },
+        {
+          "headings": "<h1> The PC Bang After the Peak <h2> The PC Bang After the Peak <h2> Sources on this page",
+          "headingsCount": "3",
+          "headingsErrorsCount": "0",
+          "headingsHtml": "<ul><li>&lt;h1&gt; The PC Bang After the Peak<ul><li>&lt;h2&gt; The PC Bang After the Peak</li><li>&lt;h2&gt; Sources on this page</li></ul></li></ul>",
+          "urlPathAndQuery": "/pcbang.html"
+        }
+      ],
+      "title": "Heading structure"
+    },
+    "skipped": {
+      "aplCode": "skipped",
+      "columns": {
+        "reason": {
+          "aplCode": "reason",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Reason",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 18
+        },
+        "sourceAttr": {
+          "aplCode": "sourceAttr",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Source",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 19
+        },
+        "sourceUqId": {
+          "aplCode": "sourceUqId",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Found at URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 60
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Skipped URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 60
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "Skipped URLs"
+    },
+    "skipped-summary": {
+      "aplCode": "skipped-summary",
+      "columns": {
+        "count": {
+          "aplCode": "count",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Unique URLs",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 11
+        },
+        "domain": {
+          "aplCode": "domain",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Domain",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "reason": {
+          "aplCode": "reason",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Reason",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 18
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "Skipped URLs Summary"
+    },
+    "slowest-urls": {
+      "aplCode": "slowest-urls",
+      "columns": {
+        "requestTime": {
+          "aplCode": "requestTime",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Time",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "statusCode": {
+          "aplCode": "statusCode",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Status",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": 6
+        },
+        "url": {
+          "aplCode": "url",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": true,
+          "getDataValueCallback": null,
+          "name": "Slow URL",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": true,
+          "width": 95
+        }
+      },
+      "position": "before-url-table",
+      "rows": [],
+      "title": "TOP slowest URLs"
+    },
+    "source-domains": {
+      "aplCode": "source-domains",
+      "columns": {
+        "CSS": {
+          "aplCode": "CSS",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "CSS",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "HTML": {
+          "aplCode": "HTML",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "HTML",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "Image": {
+          "aplCode": "Image",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Image",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "JS": {
+          "aplCode": "JS",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "JS",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "domain": {
+          "aplCode": "domain",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": null,
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Domain",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        },
+        "totals": {
+          "aplCode": "totals",
+          "escapeOutputHtml": true,
+          "forcedDataType": null,
+          "formatter": {},
+          "formatterWillChangeValueLength": false,
+          "getDataValueCallback": null,
+          "name": "Totals",
+          "nonBreakingSpaces": false,
+          "renderer": null,
+          "truncateIfLonger": false,
+          "width": -1
+        }
+      },
+      "position": "after-url-table",
+      "rows": [
+        {
+          "Audio": "",
+          "CSS": "2/13kB/11ms",
+          "Document": "",
+          "Font": "",
+          "HTML": "8/30kB/39ms",
+          "Image": "5/2MB/33ms",
+          "JS": "2/12kB/11ms",
+          "JSON": "",
+          "Other": "",
+          "Redirect": "",
+          "Video": "",
+          "XML": "",
+          "domain": "127.0.0.1",
+          "totalCount": "17",
+          "totals": "17/2MB/96ms"
+        }
+      ],
+      "title": "Source domains"
+    }
+  }
+}

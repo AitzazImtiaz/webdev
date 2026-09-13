@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Deliberate invalid fixture",
+    "yearFrom": 2006,
+    "yearTo": 2026,
+    "viewBox": { "w": 800, "h": 520 }
+  },
+  "nodes": [
+    { "id": "kt", "label": "KT", "type": "isp", "x": 140, "y": 90 },
+    { "id": "kt", "label": "KT duplicate", "type": "isp", "x": 400, "y": 90 },
+    { "id": "kinx", "label": "KINX", "type": "ix", "x": 9999, "y": 245 },
+    { "id": "lgu", "label": "LG U+", "type": "carrier", "x": 660, "y": 90 }
+  ],
+  "edges": [
+    { "from": "kt", "to": "skb-typo", "year": 2008, "kind": "peering" },
+    { "from": "kt", "to": "kinx", "year": 1998, "kind": "peering" }
+  ]
+}
