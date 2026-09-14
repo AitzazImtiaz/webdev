@@ -28,7 +28,7 @@
     .link-box label {
       display: block; margin-bottom: 4px; font-family: var(--mono);
       font-size: 10px; letter-spacing: .12em; text-transform: uppercase;
-      color: rgba(31,41,36,.55);
+      color: rgba(var(--ink-rgb), .55);
     }
     .wire-log {
       height: 120px; margin: 0; padding: 10px 12px; overflow-y: auto;
@@ -37,7 +37,7 @@
     }
     .wire-log p { margin: 0; }
     .wire-log .me { color: var(--pine); }
-    .wire-log .sys { color: rgba(31,41,36,.45); }
+    .wire-log .sys { color: rgba(var(--ink-rgb), .45); }
     .wire-say { display: flex; gap: 8px; margin-top: 10px; }
     .wire-say input {
       flex: 1; min-width: 0; padding: 8px 10px; border: var(--hairline);
@@ -45,8 +45,8 @@
     }
     .bars { width: 100%; height: auto; display: block; }
     .bar { fill: #24382c; }
-    .bar-l { font-family: var(--mono); font-size: 10px; fill: rgba(31,41,36,.75); }
-    .bar-y { font-family: var(--mono); font-size: 9px; fill: rgba(31,41,36,.45); }
+    .bar-l { font-family: var(--mono); font-size: 10px; fill: rgba(var(--ink-rgb), .75); }
+    .bar-y { font-family: var(--mono); font-size: 9px; fill: rgba(var(--ink-rgb), .45); }
   </style>
 </head>
 <body>
@@ -92,9 +92,9 @@
         <h2 id="lan-h">Take a seat</h2>
 
         <div class="band-main">
-          <p class="tl-note">You might be tired of reading too much... So. Well. Why not try a PC Bang yourself! Please open this 
-            page on a second browser window, or a seperate device on the same network. Follow three steps on right and two browsers/windows 
-            will act like a PC Bang and direct;y talk to each other, without any server betweem them! Pick a seat, move your cursor, and find out 
+          <p class="tl-note">You might be tired of reading too much... So. Well. Why not try a PC Bang yourself! Please open this
+            page on a second browser window, or a seperate device on the same network. Follow three steps on right and two browsers/windows
+            will act like a PC Bang and direct;y talk to each other, without any server betweem them! Pick a seat, move your cursor, and find out
             where is the cursor of the person you're connected with!
           </p>
 
@@ -138,7 +138,7 @@
         <aside class="band-side">
           <h3 class="side-h">Connect two seats</h3>
 
-          <p>This mechanism does not use HTTP protocol, going beyond to use WebRTC protocol which comes by default in web browsers. Two browsers 
+          <p>This mechanism does not use HTTP protocol, going beyond to use WebRTC protocol which comes by default in web browsers. Two browsers
             exchange a hashed code to establish a connection, talking directly. No communication happens to any server, making this a p2p secure channel, working
             even without internet if a LAN connection is made between the computers!
           </p>
@@ -179,7 +179,7 @@
                aria-label="A bar chart of PC bang venue counts from 1997 to 2025, peaking at 23,548 in 2001 and falling to 6,983 by 2025."></svg>
 
           <div class="prose">
-            <p>By 1997, the country had roughly hundred PC bangs, which rised to fifteen thousand three years later, and by 2001 this peaked to 23,548 rooms, 
+            <p>By 1997, the country had roughly hundred PC bangs, which rised to fifteen thousand three years later, and by 2001 this peaked to 23,548 rooms,
               a room in nearly every commercial block of urban korea! <cite data-ref="crafted-pcbang-2026"></cite>
             </p>
 
@@ -187,7 +187,7 @@
             Korea Creative Content Agency's white paper recorded 7243 for 2024, another recurring (fifth) consecutive fall, and by August 2025 this figure came down to 6,983. (which
             is roughly 70% reduction from peak) <cite data-ref="epickor-pcbang-2026"></cite> </p>
 
-            <p>This sounds like a drop, implying that the industry is failing. As a caution, KOCCA white papers and industry surveys slighly differ in reporting, which is why you may find some sources 
+            <p>This sounds like a drop, implying that the industry is failing. As a caution, KOCCA white papers and industry surveys slighly differ in reporting, which is why you may find some sources
               quoting "around 20k" for years when others report half of it. This trend is unambiguous because some PC Bangs count as business, others do not.
             </p>
           </div>
@@ -211,24 +211,24 @@
 
         <div class="band-main prose">
           <p>Both sound contradictory, but the premise I am going to present might clarify. In 2024
-            PC bang industry revenue rose 12.8% to around approximately ₩2.26 trillion. This is a three times 
-            faster rise than Korean gaming industry on whole where fewer venues are paying more money!<cite data-ref="crafted-pcbang-2026"></cite> 
+            PC bang industry revenue rose 12.8% to around approximately ₩2.26 trillion. This is a three times
+            faster rise than Korean gaming industry on whole where fewer venues are paying more money!<cite data-ref="crafted-pcbang-2026"></cite>
           </p>
 
           <p>But... why? Part of it is consolidation, those surviving this era of PC bang keep coming back to reinvest as whales. By rough estimates,
             73% of operators did not require any PC upgrades at all in 2024 and only 6.3% of operators replaced their entire systems, hence making a PC bang environment
-            only dependent on if the room and service is good or tired. <cite data-ref="epickor-pcbang-2026"></cite> Part of it is also that PC bang was never selling internet 
+            only dependent on if the room and service is good or tired. <cite data-ref="epickor-pcbang-2026"></cite> Part of it is also that PC bang was never selling internet
             access to begin with, though it seems like, its popularity got widespread in gamers earlier on.
           </p>
-          
-          <p>Around my birth, 94% of Korean households already had broadband and anyone walking into PC bang in 2006 had a connection home. They were not after internet, but buying the 
+
+          <p>Around my birth, 94% of Korean households already had broadband and anyone walking into PC bang in 2006 had a connection home. They were not after internet, but buying the
             room to have friends in a row, shouting across and watching each other's screens. It acted like a digital environment where hangout was physical, being only service providing physical
             company over wires!
           </p>
-          
+
           <p>This is why demo above is floor plan rather than a simple chat window :) To show the empty rooms and tell what other people can achieve by filling the room only two people can right now.
-            People coming at arm's length on same network. Out of breaking procedural etiquette, I dedicate this to Aryan Ghani and Ye Yulian (Lolu), motivation behind this work encompassed my memories 
-            about you 
+            People coming at arm's length on same network. Out of breaking procedural etiquette, I dedicate this to Aryan Ghani and Ye Yulian (Lolu), motivation behind this work encompassed my memories
+            about you
           </p>
         </div>
 

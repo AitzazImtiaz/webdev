@@ -128,3 +128,13 @@
   .pol-bar { flex-wrap: wrap; gap: 10px; }
   .pol-table { font-size: 12px; }
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  #pol-editor { background: #1c1f23; }
+  .pol-key dt, .pol-note { color: rgba(var(--ink-rgb), .55); }
+  .pol-preset { border-color: rgba(var(--ink-rgb), .3); background: #2a2e33; }
+  .pol-table th { color: var(--good); }
+  .pol-table tbody tr:nth-child(even) { background: rgba(255, 255, 255, .03); }
+  .pol-table tbody tr:hover { background: rgba(155, 34, 66, .12); }
+}

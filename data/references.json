@@ -246,5 +246,21 @@
     "publisher": "Data Protection Laws of the World",
     "url": "https://www.dlapiperdataprotection.com/index.html?t=law&c=KR",
     "accessed": "2026-09-04"
+  },
+  "kisa-official": {
+    "author": "Korea Internet & Security Agency",
+    "year": 2000,
+    "title": "KISA",
+    "publisher": "KISA",
+    "url": "https://www.kisa.or.kr/EN",
+    "accessed": "2026-09-12"
+  },
+  "chosunbiz-kisa": {
+    "author": "ChosunBiz",
+    "year": 2000,
+    "title": "KISA launches vulnerability cleaning service to help Korean users patch software quickly",
+    "publisher": "ChosunBiz",
+    "url": "https://biz.chosun.com/en/en-it/2025/11/16/GCF2HIXQVFHGBHIZHQTFGFBRVA/",
+    "accessed": "2026-09-13"
   }
 }

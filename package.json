@@ -15,6 +15,7 @@
     "@codemirror/view": "^6.43.11",
     "codemirror": "^6.0.2",
     "esbuild": "^0.28.2",
+    "html-validate": "^11.15.0",
     "http-server": "^14.1.1"
   },
   "scripts": {

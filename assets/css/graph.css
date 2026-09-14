@@ -218,8 +218,8 @@
 }
 
 /* Data tables
-   Shared by the organisation table (index, network),seat table (pcbang)
-   and event table (timeline), so four stay in step. */
+   Shared by organisation table (index, network),seat table (pcbang)
+   and event table (timeline) so four stay in step. */
 :is(#graph-table, #tl-table) {
   width: 100%;
   margin: 16px 0 0;

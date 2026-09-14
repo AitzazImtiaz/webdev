@@ -28,6 +28,12 @@
     cable: '#7a8b80'
   };
 
+  // Define colors for dark mode
+  var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var LABEL = dark ? '#e6e5e1' : '#1f2924';
+  var OUTLINE = dark ? '#1f2924' : '#e6e5e1';
+  var EDGE = dark ? 'rgba(230, 229, 225, 0.35)' : 'rgba(36, 56, 44, 0.35)';
+
   /**
    * @param {string} id Element id.
    * @returns {HTMLElement} Element or null when absent.
@@ -145,17 +151,17 @@
             'width': 34,
             'height': 34,
             'border-width': 2,
-            'border-color': '#e6e5e1',
+            'border-color': OUTLINE,
             'font-family': 'ui-monospace, SFMono-Regular, Menlo, monospace',
             'font-size': 11,
-            'color': '#1f2924',
+            'color': LABEL,
             'text-valign': 'bottom',
             'text-margin-y': 7
           }
         },
         {
           selector: 'node:selected',
-          style: { 'border-color': '#1f2924', 'border-width': 3 }
+          style: { 'border-color': LABEL, 'border-width': 3 }
         },
         {
           selector: 'edge',
@@ -169,7 +175,7 @@
         { selector: 'edge[kind = "submarine"]', style: { 'line-style': 'dashed' } },
         {
           selector: 'edge:selected',
-          style: { 'line-color': '#9b2242', 'width': 3 }
+          style: { 'line-color': EDGE, 'width': 3 }
         }
       ]
     });

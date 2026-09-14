@@ -206,9 +206,20 @@ function buildPresets() {
  * loading sql.js and policy.db in background.
  */
 function boot() {
+  var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  var cmTheme = EditorView.theme({
+    '&': { color: '#e6e4e0', backgroundColor: '#1c1f23' },
+    '.cm-content': { caretColor: '#e6e4e0' },
+    '.cm-gutters': { backgroundColor: '#23272b', color: '#8d959d', border: 'none' },
+    '.cm-activeLine': { backgroundColor: 'rgba(255,255,255,.04)' },
+    '.cm-activeLineGutter': { backgroundColor: 'rgba(255,255,255,.06)' },
+    '.cm-selectionBackground, ::selection': { backgroundColor: 'rgba(155,34,66,.35)' }
+  }, { dark: true });
+
   editor = new EditorView({
     doc: PRESETS[0].sql,
-    extensions: [basicSetup, sql({ dialect: SQLite })],
+    extensions: dark ? [basicSetup, sql({ dialect: SQLite }), cmTheme] : [basicSetup, sql({ dialect: SQLite })], // Run differently for dark mode
     parent: $('pol-editor')
   });
 
